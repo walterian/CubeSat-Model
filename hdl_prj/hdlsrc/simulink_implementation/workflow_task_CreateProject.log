@@ -1,0 +1,18 @@
+Task "Create Project" successful.
+Generated logfile: 
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source HDL_DUT_Xilinx_Vivado_run.tcl -notrace
+### Create new Xilinx Vivado 2019.2 project <a href="matlab:downstream.handle('Model','simulink_implementation').openTargetTool;">hdl_prj\vivado_prj\HDL_DUT_vivado.xpr</a>
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 426.563 ; gain = 131.066
+### Set Xilinx Vivado 2019.2 project properties
+### Update Xilinx Vivado 2019.2 project with HDL source files
+WARNING: [Vivado 12-818] No files matched '*.tcl'
+### Close Xilinx Vivado 2019.2 project.
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 14:08:11 2019...
+
+Elapsed time is 48.372 seconds.

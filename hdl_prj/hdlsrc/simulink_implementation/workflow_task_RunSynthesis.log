@@ -1,0 +1,888 @@
+Task "Run Synthesis" successful.
+Generated logfile: 
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source HDL_DUT_Xilinx_Vivado_run.tcl -notrace
+### Open existing Xilinx Vivado 2019.2 project hdl_prj\vivado_prj\HDL_DUT_vivado.xpr
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 449.781 ; gain = 156.402
+### Running Synthesis in Xilinx Vivado 2019.2 ...
+[Sun Dec 29 14:10:50 2019] Launched synth_1...
+Run output will be captured here: E:/MATLAB/Clean_HDL/hdl_prj/vivado_prj/HDL_DUT_vivado.runs/synth_1/runme.log
+[Sun Dec 29 14:10:50 2019] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log HDL_DUT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDL_DUT.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source HDL_DUT.tcl -notrace
+Command: synth_design -top HDL_DUT -part xc7vx485tffg1761-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3328 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1122.789 ; gain = 234.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HDL_DUT' [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/HDL_DUT.vhd:55]
+INFO: [Synth 8-3491] module 'HDL_DUT_tc' declared at 'E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/HDL_DUT_tc.vhd:29' bound to instance 'u_HDL_DUT_tc' of component 'HDL_DUT_tc' [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/HDL_DUT.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'HDL_DUT_tc' [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/HDL_DUT_tc.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HDL_DUT_tc' (1#1) [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/HDL_DUT_tc.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HDL_DUT' (2#1) [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/HDL_DUT.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1196.293 ; gain = 307.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1196.293 ; gain = 307.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1196.293 ; gain = 307.883
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 1196.293 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/clock_constraint.xdc]
+Finished Parsing XDC File [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/clock_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1331.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.506 . Memory (MB): peak = 1341.898 ; gain = 9.953
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1341.898 ; gain = 453.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1341.898 ; gain = 453.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1341.898 ; gain = 453.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1341.898 ; gain = 453.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     44 Bit       Adders := 4     
+	 100 Input     43 Bit       Adders := 1     
+	   2 Input     43 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               43 Bit    Registers := 7     
+	               18 Bit    Registers := 100   
+	               12 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     44 Bit        Muxes := 4     
+	   2 Input     43 Bit        Muxes := 9     
+	   6 Input     43 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module HDL_DUT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     44 Bit       Adders := 4     
+	 100 Input     43 Bit       Adders := 1     
+	   2 Input     43 Bit       Adders := 1     
++---Registers : 
+	               43 Bit    Registers := 7     
+	               18 Bit    Registers := 100   
+	               12 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     44 Bit        Muxes := 4     
+	   2 Input     43 Bit        Muxes := 9     
+	   6 Input     43 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module HDL_DUT_tc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP Product_out1_1_reg[1], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[1] is absorbed into DSP Product_out1_1_reg[1].
+DSP Report: operator Product_out1[1] is absorbed into DSP Product_out1_1_reg[1].
+DSP Report: Generating DSP Product_out1_1_reg[2], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[2] is absorbed into DSP Product_out1_1_reg[2].
+DSP Report: operator Product_out1[2] is absorbed into DSP Product_out1_1_reg[2].
+DSP Report: Generating DSP Product_out1_1_reg[3], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[3] is absorbed into DSP Product_out1_1_reg[3].
+DSP Report: operator Product_out1[3] is absorbed into DSP Product_out1_1_reg[3].
+DSP Report: Generating DSP Product_out1_1_reg[4], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[4] is absorbed into DSP Product_out1_1_reg[4].
+DSP Report: operator Product_out1[4] is absorbed into DSP Product_out1_1_reg[4].
+DSP Report: Generating DSP Product_out1_1_reg[5], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[5] is absorbed into DSP Product_out1_1_reg[5].
+DSP Report: operator Product_out1[5] is absorbed into DSP Product_out1_1_reg[5].
+DSP Report: Generating DSP Product_out1_1_reg[6], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[6] is absorbed into DSP Product_out1_1_reg[6].
+DSP Report: operator Product_out1[6] is absorbed into DSP Product_out1_1_reg[6].
+DSP Report: Generating DSP Product_out1_1_reg[7], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[7] is absorbed into DSP Product_out1_1_reg[7].
+DSP Report: operator Product_out1[7] is absorbed into DSP Product_out1_1_reg[7].
+DSP Report: Generating DSP Product_out1_1_reg[8], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[8] is absorbed into DSP Product_out1_1_reg[8].
+DSP Report: operator Product_out1[8] is absorbed into DSP Product_out1_1_reg[8].
+DSP Report: Generating DSP Product_out1_1_reg[9], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[9] is absorbed into DSP Product_out1_1_reg[9].
+DSP Report: operator Product_out1[9] is absorbed into DSP Product_out1_1_reg[9].
+DSP Report: Generating DSP Product_out1_1_reg[10], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[10] is absorbed into DSP Product_out1_1_reg[10].
+DSP Report: operator Product_out1[10] is absorbed into DSP Product_out1_1_reg[10].
+DSP Report: Generating DSP Product_out1_1_reg[11], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[11] is absorbed into DSP Product_out1_1_reg[11].
+DSP Report: operator Product_out1[11] is absorbed into DSP Product_out1_1_reg[11].
+DSP Report: Generating DSP Product_out1_1_reg[12], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[12] is absorbed into DSP Product_out1_1_reg[12].
+DSP Report: operator Product_out1[12] is absorbed into DSP Product_out1_1_reg[12].
+DSP Report: Generating DSP Product_out1_1_reg[13], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[13] is absorbed into DSP Product_out1_1_reg[13].
+DSP Report: operator Product_out1[13] is absorbed into DSP Product_out1_1_reg[13].
+DSP Report: Generating DSP Product_out1_1_reg[14], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[14] is absorbed into DSP Product_out1_1_reg[14].
+DSP Report: operator Product_out1[14] is absorbed into DSP Product_out1_1_reg[14].
+DSP Report: Generating DSP Product_out1_1_reg[15], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[15] is absorbed into DSP Product_out1_1_reg[15].
+DSP Report: operator Product_out1[15] is absorbed into DSP Product_out1_1_reg[15].
+DSP Report: Generating DSP Product_out1_1_reg[16], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[16] is absorbed into DSP Product_out1_1_reg[16].
+DSP Report: operator Product_out1[16] is absorbed into DSP Product_out1_1_reg[16].
+DSP Report: Generating DSP Product_out1_1_reg[17], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[17] is absorbed into DSP Product_out1_1_reg[17].
+DSP Report: operator Product_out1[17] is absorbed into DSP Product_out1_1_reg[17].
+DSP Report: Generating DSP Product_out1_1_reg[18], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[18] is absorbed into DSP Product_out1_1_reg[18].
+DSP Report: operator Product_out1[18] is absorbed into DSP Product_out1_1_reg[18].
+DSP Report: Generating DSP Product_out1_1_reg[19], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[19] is absorbed into DSP Product_out1_1_reg[19].
+DSP Report: operator Product_out1[19] is absorbed into DSP Product_out1_1_reg[19].
+DSP Report: Generating DSP Product_out1_1_reg[20], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[20] is absorbed into DSP Product_out1_1_reg[20].
+DSP Report: operator Product_out1[20] is absorbed into DSP Product_out1_1_reg[20].
+DSP Report: Generating DSP Product_out1_1_reg[21], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[21] is absorbed into DSP Product_out1_1_reg[21].
+DSP Report: operator Product_out1[21] is absorbed into DSP Product_out1_1_reg[21].
+DSP Report: Generating DSP Product_out1_1_reg[22], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[22] is absorbed into DSP Product_out1_1_reg[22].
+DSP Report: operator Product_out1[22] is absorbed into DSP Product_out1_1_reg[22].
+DSP Report: Generating DSP Product_out1_1_reg[23], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[23] is absorbed into DSP Product_out1_1_reg[23].
+DSP Report: operator Product_out1[23] is absorbed into DSP Product_out1_1_reg[23].
+DSP Report: Generating DSP Product_out1_1_reg[24], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[24] is absorbed into DSP Product_out1_1_reg[24].
+DSP Report: operator Product_out1[24] is absorbed into DSP Product_out1_1_reg[24].
+DSP Report: Generating DSP Product_out1_1_reg[25], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[25] is absorbed into DSP Product_out1_1_reg[25].
+DSP Report: operator Product_out1[25] is absorbed into DSP Product_out1_1_reg[25].
+DSP Report: Generating DSP Product_out1_1_reg[26], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[26] is absorbed into DSP Product_out1_1_reg[26].
+DSP Report: operator Product_out1[26] is absorbed into DSP Product_out1_1_reg[26].
+DSP Report: Generating DSP Product_out1_1_reg[27], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[27] is absorbed into DSP Product_out1_1_reg[27].
+DSP Report: operator Product_out1[27] is absorbed into DSP Product_out1_1_reg[27].
+DSP Report: Generating DSP Product_out1_1_reg[28], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[28] is absorbed into DSP Product_out1_1_reg[28].
+DSP Report: operator Product_out1[28] is absorbed into DSP Product_out1_1_reg[28].
+DSP Report: Generating DSP Product_out1_1_reg[29], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[29] is absorbed into DSP Product_out1_1_reg[29].
+DSP Report: operator Product_out1[29] is absorbed into DSP Product_out1_1_reg[29].
+DSP Report: Generating DSP Product_out1_1_reg[30], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[30] is absorbed into DSP Product_out1_1_reg[30].
+DSP Report: operator Product_out1[30] is absorbed into DSP Product_out1_1_reg[30].
+DSP Report: Generating DSP Product_out1_1_reg[31], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[31] is absorbed into DSP Product_out1_1_reg[31].
+DSP Report: operator Product_out1[31] is absorbed into DSP Product_out1_1_reg[31].
+DSP Report: Generating DSP Product_out1_1_reg[32], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[32] is absorbed into DSP Product_out1_1_reg[32].
+DSP Report: operator Product_out1[32] is absorbed into DSP Product_out1_1_reg[32].
+DSP Report: Generating DSP Product_out1_1_reg[33], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[33] is absorbed into DSP Product_out1_1_reg[33].
+DSP Report: operator Product_out1[33] is absorbed into DSP Product_out1_1_reg[33].
+DSP Report: Generating DSP Product_out1_1_reg[34], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[34] is absorbed into DSP Product_out1_1_reg[34].
+DSP Report: operator Product_out1[34] is absorbed into DSP Product_out1_1_reg[34].
+DSP Report: Generating DSP Product_out1_1_reg[35], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[35] is absorbed into DSP Product_out1_1_reg[35].
+DSP Report: operator Product_out1[35] is absorbed into DSP Product_out1_1_reg[35].
+DSP Report: Generating DSP Product_out1_1_reg[36], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[36] is absorbed into DSP Product_out1_1_reg[36].
+DSP Report: operator Product_out1[36] is absorbed into DSP Product_out1_1_reg[36].
+DSP Report: Generating DSP Product_out1_1_reg[37], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[37] is absorbed into DSP Product_out1_1_reg[37].
+DSP Report: operator Product_out1[37] is absorbed into DSP Product_out1_1_reg[37].
+DSP Report: Generating DSP Product_out1_1_reg[38], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[38] is absorbed into DSP Product_out1_1_reg[38].
+DSP Report: operator Product_out1[38] is absorbed into DSP Product_out1_1_reg[38].
+DSP Report: Generating DSP Product_out1_1_reg[39], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[39] is absorbed into DSP Product_out1_1_reg[39].
+DSP Report: operator Product_out1[39] is absorbed into DSP Product_out1_1_reg[39].
+DSP Report: Generating DSP Product_out1_1_reg[40], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[40] is absorbed into DSP Product_out1_1_reg[40].
+DSP Report: operator Product_out1[40] is absorbed into DSP Product_out1_1_reg[40].
+DSP Report: Generating DSP Product_out1_1_reg[41], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[41] is absorbed into DSP Product_out1_1_reg[41].
+DSP Report: operator Product_out1[41] is absorbed into DSP Product_out1_1_reg[41].
+DSP Report: Generating DSP Product_out1_1_reg[42], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[42] is absorbed into DSP Product_out1_1_reg[42].
+DSP Report: operator Product_out1[42] is absorbed into DSP Product_out1_1_reg[42].
+DSP Report: Generating DSP Product_out1_1_reg[43], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[43] is absorbed into DSP Product_out1_1_reg[43].
+DSP Report: operator Product_out1[43] is absorbed into DSP Product_out1_1_reg[43].
+DSP Report: Generating DSP Product_out1_1_reg[44], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[44] is absorbed into DSP Product_out1_1_reg[44].
+DSP Report: operator Product_out1[44] is absorbed into DSP Product_out1_1_reg[44].
+DSP Report: Generating DSP Product_out1_1_reg[45], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[45] is absorbed into DSP Product_out1_1_reg[45].
+DSP Report: operator Product_out1[45] is absorbed into DSP Product_out1_1_reg[45].
+DSP Report: Generating DSP Product_out1_1_reg[46], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[46] is absorbed into DSP Product_out1_1_reg[46].
+DSP Report: operator Product_out1[46] is absorbed into DSP Product_out1_1_reg[46].
+DSP Report: Generating DSP Product_out1_1_reg[47], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[47] is absorbed into DSP Product_out1_1_reg[47].
+DSP Report: operator Product_out1[47] is absorbed into DSP Product_out1_1_reg[47].
+DSP Report: Generating DSP Product_out1_1_reg[48], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[48] is absorbed into DSP Product_out1_1_reg[48].
+DSP Report: operator Product_out1[48] is absorbed into DSP Product_out1_1_reg[48].
+DSP Report: Generating DSP Product_out1_1_reg[49], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[49] is absorbed into DSP Product_out1_1_reg[49].
+DSP Report: operator Product_out1[49] is absorbed into DSP Product_out1_1_reg[49].
+DSP Report: Generating DSP Product_out1_1_reg[50], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[50] is absorbed into DSP Product_out1_1_reg[50].
+DSP Report: operator Product_out1[50] is absorbed into DSP Product_out1_1_reg[50].
+DSP Report: Generating DSP Product_out1_1_reg[51], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[51] is absorbed into DSP Product_out1_1_reg[51].
+DSP Report: operator Product_out1[51] is absorbed into DSP Product_out1_1_reg[51].
+DSP Report: Generating DSP Product_out1_1_reg[52], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[52] is absorbed into DSP Product_out1_1_reg[52].
+DSP Report: operator Product_out1[52] is absorbed into DSP Product_out1_1_reg[52].
+DSP Report: Generating DSP Product_out1_1_reg[53], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[53] is absorbed into DSP Product_out1_1_reg[53].
+DSP Report: operator Product_out1[53] is absorbed into DSP Product_out1_1_reg[53].
+DSP Report: Generating DSP Product_out1_1_reg[54], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[54] is absorbed into DSP Product_out1_1_reg[54].
+DSP Report: operator Product_out1[54] is absorbed into DSP Product_out1_1_reg[54].
+DSP Report: Generating DSP Product_out1_1_reg[55], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[55] is absorbed into DSP Product_out1_1_reg[55].
+DSP Report: operator Product_out1[55] is absorbed into DSP Product_out1_1_reg[55].
+DSP Report: Generating DSP Product_out1_1_reg[56], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[56] is absorbed into DSP Product_out1_1_reg[56].
+DSP Report: operator Product_out1[56] is absorbed into DSP Product_out1_1_reg[56].
+DSP Report: Generating DSP Product_out1_1_reg[57], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[57] is absorbed into DSP Product_out1_1_reg[57].
+DSP Report: operator Product_out1[57] is absorbed into DSP Product_out1_1_reg[57].
+DSP Report: Generating DSP Product_out1_1_reg[58], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[58] is absorbed into DSP Product_out1_1_reg[58].
+DSP Report: operator Product_out1[58] is absorbed into DSP Product_out1_1_reg[58].
+DSP Report: Generating DSP Product_out1_1_reg[59], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[59] is absorbed into DSP Product_out1_1_reg[59].
+DSP Report: operator Product_out1[59] is absorbed into DSP Product_out1_1_reg[59].
+DSP Report: Generating DSP Product_out1_1_reg[60], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[60] is absorbed into DSP Product_out1_1_reg[60].
+DSP Report: operator Product_out1[60] is absorbed into DSP Product_out1_1_reg[60].
+DSP Report: Generating DSP Product_out1_1_reg[61], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[61] is absorbed into DSP Product_out1_1_reg[61].
+DSP Report: operator Product_out1[61] is absorbed into DSP Product_out1_1_reg[61].
+DSP Report: Generating DSP Product_out1_1_reg[62], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[62] is absorbed into DSP Product_out1_1_reg[62].
+DSP Report: operator Product_out1[62] is absorbed into DSP Product_out1_1_reg[62].
+DSP Report: Generating DSP Product_out1_1_reg[63], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[63] is absorbed into DSP Product_out1_1_reg[63].
+DSP Report: operator Product_out1[63] is absorbed into DSP Product_out1_1_reg[63].
+DSP Report: Generating DSP Product_out1_1_reg[64], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[64] is absorbed into DSP Product_out1_1_reg[64].
+DSP Report: operator Product_out1[64] is absorbed into DSP Product_out1_1_reg[64].
+DSP Report: Generating DSP Product_out1_1_reg[65], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[65] is absorbed into DSP Product_out1_1_reg[65].
+DSP Report: operator Product_out1[65] is absorbed into DSP Product_out1_1_reg[65].
+DSP Report: Generating DSP Product_out1_1_reg[66], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[66] is absorbed into DSP Product_out1_1_reg[66].
+DSP Report: operator Product_out1[66] is absorbed into DSP Product_out1_1_reg[66].
+DSP Report: Generating DSP Product_out1_1_reg[67], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[67] is absorbed into DSP Product_out1_1_reg[67].
+DSP Report: operator Product_out1[67] is absorbed into DSP Product_out1_1_reg[67].
+DSP Report: Generating DSP Product_out1_1_reg[68], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[68] is absorbed into DSP Product_out1_1_reg[68].
+DSP Report: operator Product_out1[68] is absorbed into DSP Product_out1_1_reg[68].
+DSP Report: Generating DSP Product_out1_1_reg[69], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[69] is absorbed into DSP Product_out1_1_reg[69].
+DSP Report: operator Product_out1[69] is absorbed into DSP Product_out1_1_reg[69].
+DSP Report: Generating DSP Product_out1_1_reg[70], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[70] is absorbed into DSP Product_out1_1_reg[70].
+DSP Report: operator Product_out1[70] is absorbed into DSP Product_out1_1_reg[70].
+DSP Report: Generating DSP Product_out1_1_reg[71], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[71] is absorbed into DSP Product_out1_1_reg[71].
+DSP Report: operator Product_out1[71] is absorbed into DSP Product_out1_1_reg[71].
+DSP Report: Generating DSP Product_out1_1_reg[72], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[72] is absorbed into DSP Product_out1_1_reg[72].
+DSP Report: operator Product_out1[72] is absorbed into DSP Product_out1_1_reg[72].
+DSP Report: Generating DSP Product_out1_1_reg[73], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[73] is absorbed into DSP Product_out1_1_reg[73].
+DSP Report: operator Product_out1[73] is absorbed into DSP Product_out1_1_reg[73].
+DSP Report: Generating DSP Product_out1_1_reg[74], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[74] is absorbed into DSP Product_out1_1_reg[74].
+DSP Report: operator Product_out1[74] is absorbed into DSP Product_out1_1_reg[74].
+DSP Report: Generating DSP Product_out1_1_reg[75], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[75] is absorbed into DSP Product_out1_1_reg[75].
+DSP Report: operator Product_out1[75] is absorbed into DSP Product_out1_1_reg[75].
+DSP Report: Generating DSP Product_out1_1_reg[76], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[76] is absorbed into DSP Product_out1_1_reg[76].
+DSP Report: operator Product_out1[76] is absorbed into DSP Product_out1_1_reg[76].
+DSP Report: Generating DSP Product_out1_1_reg[77], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[77] is absorbed into DSP Product_out1_1_reg[77].
+DSP Report: operator Product_out1[77] is absorbed into DSP Product_out1_1_reg[77].
+DSP Report: Generating DSP Product_out1_1_reg[78], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[78] is absorbed into DSP Product_out1_1_reg[78].
+DSP Report: operator Product_out1[78] is absorbed into DSP Product_out1_1_reg[78].
+DSP Report: Generating DSP Product_out1_1_reg[79], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[79] is absorbed into DSP Product_out1_1_reg[79].
+DSP Report: operator Product_out1[79] is absorbed into DSP Product_out1_1_reg[79].
+DSP Report: Generating DSP Product_out1_1_reg[80], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[80] is absorbed into DSP Product_out1_1_reg[80].
+DSP Report: operator Product_out1[80] is absorbed into DSP Product_out1_1_reg[80].
+DSP Report: Generating DSP Product_out1_1_reg[81], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[81] is absorbed into DSP Product_out1_1_reg[81].
+DSP Report: operator Product_out1[81] is absorbed into DSP Product_out1_1_reg[81].
+DSP Report: Generating DSP Product_out1_1_reg[82], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[82] is absorbed into DSP Product_out1_1_reg[82].
+DSP Report: operator Product_out1[82] is absorbed into DSP Product_out1_1_reg[82].
+DSP Report: Generating DSP Product_out1_1_reg[83], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[83] is absorbed into DSP Product_out1_1_reg[83].
+DSP Report: operator Product_out1[83] is absorbed into DSP Product_out1_1_reg[83].
+DSP Report: Generating DSP Product_out1_1_reg[84], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[84] is absorbed into DSP Product_out1_1_reg[84].
+DSP Report: operator Product_out1[84] is absorbed into DSP Product_out1_1_reg[84].
+DSP Report: Generating DSP Product_out1_1_reg[85], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[85] is absorbed into DSP Product_out1_1_reg[85].
+DSP Report: operator Product_out1[85] is absorbed into DSP Product_out1_1_reg[85].
+DSP Report: Generating DSP Product_out1_1_reg[86], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[86] is absorbed into DSP Product_out1_1_reg[86].
+DSP Report: operator Product_out1[86] is absorbed into DSP Product_out1_1_reg[86].
+DSP Report: Generating DSP Product_out1_1_reg[87], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[87] is absorbed into DSP Product_out1_1_reg[87].
+DSP Report: operator Product_out1[87] is absorbed into DSP Product_out1_1_reg[87].
+DSP Report: Generating DSP Product_out1_1_reg[88], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[88] is absorbed into DSP Product_out1_1_reg[88].
+DSP Report: operator Product_out1[88] is absorbed into DSP Product_out1_1_reg[88].
+DSP Report: Generating DSP Product_out1_1_reg[89], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[89] is absorbed into DSP Product_out1_1_reg[89].
+DSP Report: operator Product_out1[89] is absorbed into DSP Product_out1_1_reg[89].
+DSP Report: Generating DSP Product_out1_1_reg[90], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[90] is absorbed into DSP Product_out1_1_reg[90].
+DSP Report: operator Product_out1[90] is absorbed into DSP Product_out1_1_reg[90].
+DSP Report: Generating DSP Product_out1_1_reg[91], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[91] is absorbed into DSP Product_out1_1_reg[91].
+DSP Report: operator Product_out1[91] is absorbed into DSP Product_out1_1_reg[91].
+DSP Report: Generating DSP Product_out1_1_reg[92], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[92] is absorbed into DSP Product_out1_1_reg[92].
+DSP Report: operator Product_out1[92] is absorbed into DSP Product_out1_1_reg[92].
+DSP Report: Generating DSP Product_out1_1_reg[93], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[93] is absorbed into DSP Product_out1_1_reg[93].
+DSP Report: operator Product_out1[93] is absorbed into DSP Product_out1_1_reg[93].
+DSP Report: Generating DSP Product_out1_1_reg[94], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[94] is absorbed into DSP Product_out1_1_reg[94].
+DSP Report: operator Product_out1[94] is absorbed into DSP Product_out1_1_reg[94].
+DSP Report: Generating DSP Product_out1_1_reg[95], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[95] is absorbed into DSP Product_out1_1_reg[95].
+DSP Report: operator Product_out1[95] is absorbed into DSP Product_out1_1_reg[95].
+DSP Report: Generating DSP Product_out1_1_reg[96], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[96] is absorbed into DSP Product_out1_1_reg[96].
+DSP Report: operator Product_out1[96] is absorbed into DSP Product_out1_1_reg[96].
+DSP Report: Generating DSP Product_out1_1_reg[97], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[97] is absorbed into DSP Product_out1_1_reg[97].
+DSP Report: operator Product_out1[97] is absorbed into DSP Product_out1_1_reg[97].
+DSP Report: Generating DSP Product_out1_1_reg[98], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[98] is absorbed into DSP Product_out1_1_reg[98].
+DSP Report: operator Product_out1[98] is absorbed into DSP Product_out1_1_reg[98].
+DSP Report: Generating DSP Product_out1_1_reg[99], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[99] is absorbed into DSP Product_out1_1_reg[99].
+DSP Report: operator Product_out1[99] is absorbed into DSP Product_out1_1_reg[99].
+DSP Report: Generating DSP Product_out1_1_reg[0], operation Mode is: (A*B)'.
+DSP Report: register Product_out1_1_reg[0] is absorbed into DSP Product_out1_1_reg[0].
+DSP Report: operator Product_out1[0] is absorbed into DSP Product_out1_1_reg[0].
+INFO: [Synth 8-3886] merging instance 'Compare_To_Constant_out1N_delay_reg' (FDRE) to 'delayMatch1_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[85][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[85][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[85][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[85][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[85][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[85][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[84][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[84][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[84][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[84][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[84][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[84][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[83][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[83][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[83][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[83][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[83][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[83][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[82][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[82][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[82][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[82][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[82][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[82][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[81][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[81][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[81][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[81][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[81][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[81][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[80][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[80][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[80][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[80][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[80][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[80][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[79][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[79][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[79][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[79][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[79][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[79][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[78][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[78][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[78][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[78][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[78][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[78][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[77][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[77][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[77][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[77][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[77][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[77][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[76][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[76][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[76][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[76][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[76][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[76][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[75][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[75][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[75][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[75][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[75][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[75][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[74][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[74][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[74][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[74][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[74][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[74][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[73][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[73][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[73][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[73][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[73][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[73][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[72][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[72][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[72][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[72][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[72][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[72][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[71][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[71][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[71][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[71][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[71][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[71][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[70][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[70][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[70][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[70][3]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[70][4]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[70][5]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[69][0]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[69][1]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Data_Type_Conversion_out1_1_reg[69][2]' (FDRE) to 'Data_Type_Conversion_out1_1_reg[0][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Data_Type_Conversion_out1_1_reg[86][5] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1341.898 ; gain = 453.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|HDL_DUT     | (A*B)'      | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:19 . Memory (MB): peak = 1341.898 ; gain = 453.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1400.805 ; gain = 512.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 1455.656 ; gain = 567.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:44 . Memory (MB): peak = 1455.656 ; gain = 567.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:44 . Memory (MB): peak = 1455.656 ; gain = 567.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:46 . Memory (MB): peak = 1455.656 ; gain = 567.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:46 . Memory (MB): peak = 1455.656 ; gain = 567.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:01:46 . Memory (MB): peak = 1455.656 ; gain = 567.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:46 . Memory (MB): peak = 1455.656 ; gain = 567.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   886|
+|2     |DSP48E1_1 |    99|
+|3     |DSP48E1_2 |     1|
+|4     |LUT1      |    95|
+|5     |LUT2      |   229|
+|6     |LUT3      |  2449|
+|7     |LUT4      |  2085|
+|8     |LUT5      |   388|
+|9     |LUT6      |  1205|
+|10    |FDRE      |   303|
+|11    |FDSE      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------+-----------+------+
+|      |Instance       |Module     |Cells |
++------+---------------+-----------+------+
+|1     |top            |           |  7741|
+|2     |  u_HDL_DUT_tc |HDL_DUT_tc |    34|
++------+---------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:46 . Memory (MB): peak = 1455.656 ; gain = 567.246
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:36 . Memory (MB): peak = 1455.656 ; gain = 421.641
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:01:47 . Memory (MB): peak = 1455.656 ; gain = 567.246
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.206 . Memory (MB): peak = 1466.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 986 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'HDL_DUT' is not ideal for floorplanning, since the cellview 'HDL_DUT' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1469.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:02:16 . Memory (MB): peak = 1469.652 ; gain = 1043.773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1469.652 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/MATLAB/Clean_HDL/hdl_prj/vivado_prj/HDL_DUT_vivado.runs/synth_1/HDL_DUT.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HDL_DUT_utilization_synth.rpt -pb HDL_DUT_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 14:13:23 2019...
+[Sun Dec 29 14:13:27 2019] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:02:37 . Memory (MB): peak = 451.832 ; gain = 0.000
+### Synthesis Complete.
+### Running PostMapTiming in Xilinx Vivado 2019.2 ...
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7vx485tffg1761-2
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 893.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 986 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'HDL_DUT' is not ideal for floorplanning, since the cellview 'HDL_DUT' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/clock_constraint.xdc]
+Finished Parsing XDC File [E:/MATLAB/Clean_HDL/hdl_prj/hdlsrc/simulink_implementation/clock_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1044.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1044.191 ; gain = 592.359
+WARNING: [Common 17-708] report_timing_summary: The '-name' option will be ignored because it is only relevant in GUI mode.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.262 ; gain = 681.070
+### PostMapTiming Complete.
+### Close Xilinx Vivado 2019.2 project.
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 14:14:38 2019...
+
+Elapsed time is 243.1708 seconds.

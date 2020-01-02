@@ -1,0 +1,2711 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Dec 29 14:14:13 2019
+| Host         : DESKTOP-K7RLM5A running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 3 -nworst 3 -name timing_post_map -file timing_post_map.rpt
+| Design       : HDL_DUT
+| Device       : 7vx485t-ffg1761
+| Speed File   : -2  PRODUCTION 1.12 2014-09-11
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 1202 input ports with no input delay specified. (HIGH)
+
+clk_enable
+data_in[0][0]
+data_in[0][10]
+data_in[0][11]
+data_in[0][1]
+data_in[0][2]
+data_in[0][3]
+data_in[0][4]
+data_in[0][5]
+data_in[0][6]
+data_in[0][7]
+data_in[0][8]
+data_in[0][9]
+data_in[10][0]
+data_in[10][10]
+data_in[10][11]
+data_in[10][1]
+data_in[10][2]
+data_in[10][3]
+data_in[10][4]
+data_in[10][5]
+data_in[10][6]
+data_in[10][7]
+data_in[10][8]
+data_in[10][9]
+data_in[11][0]
+data_in[11][10]
+data_in[11][11]
+data_in[11][1]
+data_in[11][2]
+data_in[11][3]
+data_in[11][4]
+data_in[11][5]
+data_in[11][6]
+data_in[11][7]
+data_in[11][8]
+data_in[11][9]
+data_in[12][0]
+data_in[12][10]
+data_in[12][11]
+data_in[12][1]
+data_in[12][2]
+data_in[12][3]
+data_in[12][4]
+data_in[12][5]
+data_in[12][6]
+data_in[12][7]
+data_in[12][8]
+data_in[12][9]
+data_in[13][0]
+data_in[13][10]
+data_in[13][11]
+data_in[13][1]
+data_in[13][2]
+data_in[13][3]
+data_in[13][4]
+data_in[13][5]
+data_in[13][6]
+data_in[13][7]
+data_in[13][8]
+data_in[13][9]
+data_in[14][0]
+data_in[14][10]
+data_in[14][11]
+data_in[14][1]
+data_in[14][2]
+data_in[14][3]
+data_in[14][4]
+data_in[14][5]
+data_in[14][6]
+data_in[14][7]
+data_in[14][8]
+data_in[14][9]
+data_in[15][0]
+data_in[15][10]
+data_in[15][11]
+data_in[15][1]
+data_in[15][2]
+data_in[15][3]
+data_in[15][4]
+data_in[15][5]
+data_in[15][6]
+data_in[15][7]
+data_in[15][8]
+data_in[15][9]
+data_in[16][0]
+data_in[16][10]
+data_in[16][11]
+data_in[16][1]
+data_in[16][2]
+data_in[16][3]
+data_in[16][4]
+data_in[16][5]
+data_in[16][6]
+data_in[16][7]
+data_in[16][8]
+data_in[16][9]
+data_in[17][0]
+data_in[17][10]
+data_in[17][11]
+data_in[17][1]
+data_in[17][2]
+data_in[17][3]
+data_in[17][4]
+data_in[17][5]
+data_in[17][6]
+data_in[17][7]
+data_in[17][8]
+data_in[17][9]
+data_in[18][0]
+data_in[18][10]
+data_in[18][11]
+data_in[18][1]
+data_in[18][2]
+data_in[18][3]
+data_in[18][4]
+data_in[18][5]
+data_in[18][6]
+data_in[18][7]
+data_in[18][8]
+data_in[18][9]
+data_in[19][0]
+data_in[19][10]
+data_in[19][11]
+data_in[19][1]
+data_in[19][2]
+data_in[19][3]
+data_in[19][4]
+data_in[19][5]
+data_in[19][6]
+data_in[19][7]
+data_in[19][8]
+data_in[19][9]
+data_in[1][0]
+data_in[1][10]
+data_in[1][11]
+data_in[1][1]
+data_in[1][2]
+data_in[1][3]
+data_in[1][4]
+data_in[1][5]
+data_in[1][6]
+data_in[1][7]
+data_in[1][8]
+data_in[1][9]
+data_in[20][0]
+data_in[20][10]
+data_in[20][11]
+data_in[20][1]
+data_in[20][2]
+data_in[20][3]
+data_in[20][4]
+data_in[20][5]
+data_in[20][6]
+data_in[20][7]
+data_in[20][8]
+data_in[20][9]
+data_in[21][0]
+data_in[21][10]
+data_in[21][11]
+data_in[21][1]
+data_in[21][2]
+data_in[21][3]
+data_in[21][4]
+data_in[21][5]
+data_in[21][6]
+data_in[21][7]
+data_in[21][8]
+data_in[21][9]
+data_in[22][0]
+data_in[22][10]
+data_in[22][11]
+data_in[22][1]
+data_in[22][2]
+data_in[22][3]
+data_in[22][4]
+data_in[22][5]
+data_in[22][6]
+data_in[22][7]
+data_in[22][8]
+data_in[22][9]
+data_in[23][0]
+data_in[23][10]
+data_in[23][11]
+data_in[23][1]
+data_in[23][2]
+data_in[23][3]
+data_in[23][4]
+data_in[23][5]
+data_in[23][6]
+data_in[23][7]
+data_in[23][8]
+data_in[23][9]
+data_in[24][0]
+data_in[24][10]
+data_in[24][11]
+data_in[24][1]
+data_in[24][2]
+data_in[24][3]
+data_in[24][4]
+data_in[24][5]
+data_in[24][6]
+data_in[24][7]
+data_in[24][8]
+data_in[24][9]
+data_in[25][0]
+data_in[25][10]
+data_in[25][11]
+data_in[25][1]
+data_in[25][2]
+data_in[25][3]
+data_in[25][4]
+data_in[25][5]
+data_in[25][6]
+data_in[25][7]
+data_in[25][8]
+data_in[25][9]
+data_in[26][0]
+data_in[26][10]
+data_in[26][11]
+data_in[26][1]
+data_in[26][2]
+data_in[26][3]
+data_in[26][4]
+data_in[26][5]
+data_in[26][6]
+data_in[26][7]
+data_in[26][8]
+data_in[26][9]
+data_in[27][0]
+data_in[27][10]
+data_in[27][11]
+data_in[27][1]
+data_in[27][2]
+data_in[27][3]
+data_in[27][4]
+data_in[27][5]
+data_in[27][6]
+data_in[27][7]
+data_in[27][8]
+data_in[27][9]
+data_in[28][0]
+data_in[28][10]
+data_in[28][11]
+data_in[28][1]
+data_in[28][2]
+data_in[28][3]
+data_in[28][4]
+data_in[28][5]
+data_in[28][6]
+data_in[28][7]
+data_in[28][8]
+data_in[28][9]
+data_in[29][0]
+data_in[29][10]
+data_in[29][11]
+data_in[29][1]
+data_in[29][2]
+data_in[29][3]
+data_in[29][4]
+data_in[29][5]
+data_in[29][6]
+data_in[29][7]
+data_in[29][8]
+data_in[29][9]
+data_in[2][0]
+data_in[2][10]
+data_in[2][11]
+data_in[2][1]
+data_in[2][2]
+data_in[2][3]
+data_in[2][4]
+data_in[2][5]
+data_in[2][6]
+data_in[2][7]
+data_in[2][8]
+data_in[2][9]
+data_in[30][0]
+data_in[30][10]
+data_in[30][11]
+data_in[30][1]
+data_in[30][2]
+data_in[30][3]
+data_in[30][4]
+data_in[30][5]
+data_in[30][6]
+data_in[30][7]
+data_in[30][8]
+data_in[30][9]
+data_in[31][0]
+data_in[31][10]
+data_in[31][11]
+data_in[31][1]
+data_in[31][2]
+data_in[31][3]
+data_in[31][4]
+data_in[31][5]
+data_in[31][6]
+data_in[31][7]
+data_in[31][8]
+data_in[31][9]
+data_in[32][0]
+data_in[32][10]
+data_in[32][11]
+data_in[32][1]
+data_in[32][2]
+data_in[32][3]
+data_in[32][4]
+data_in[32][5]
+data_in[32][6]
+data_in[32][7]
+data_in[32][8]
+data_in[32][9]
+data_in[33][0]
+data_in[33][10]
+data_in[33][11]
+data_in[33][1]
+data_in[33][2]
+data_in[33][3]
+data_in[33][4]
+data_in[33][5]
+data_in[33][6]
+data_in[33][7]
+data_in[33][8]
+data_in[33][9]
+data_in[34][0]
+data_in[34][10]
+data_in[34][11]
+data_in[34][1]
+data_in[34][2]
+data_in[34][3]
+data_in[34][4]
+data_in[34][5]
+data_in[34][6]
+data_in[34][7]
+data_in[34][8]
+data_in[34][9]
+data_in[35][0]
+data_in[35][10]
+data_in[35][11]
+data_in[35][1]
+data_in[35][2]
+data_in[35][3]
+data_in[35][4]
+data_in[35][5]
+data_in[35][6]
+data_in[35][7]
+data_in[35][8]
+data_in[35][9]
+data_in[36][0]
+data_in[36][10]
+data_in[36][11]
+data_in[36][1]
+data_in[36][2]
+data_in[36][3]
+data_in[36][4]
+data_in[36][5]
+data_in[36][6]
+data_in[36][7]
+data_in[36][8]
+data_in[36][9]
+data_in[37][0]
+data_in[37][10]
+data_in[37][11]
+data_in[37][1]
+data_in[37][2]
+data_in[37][3]
+data_in[37][4]
+data_in[37][5]
+data_in[37][6]
+data_in[37][7]
+data_in[37][8]
+data_in[37][9]
+data_in[38][0]
+data_in[38][10]
+data_in[38][11]
+data_in[38][1]
+data_in[38][2]
+data_in[38][3]
+data_in[38][4]
+data_in[38][5]
+data_in[38][6]
+data_in[38][7]
+data_in[38][8]
+data_in[38][9]
+data_in[39][0]
+data_in[39][10]
+data_in[39][11]
+data_in[39][1]
+data_in[39][2]
+data_in[39][3]
+data_in[39][4]
+data_in[39][5]
+data_in[39][6]
+data_in[39][7]
+data_in[39][8]
+data_in[39][9]
+data_in[3][0]
+data_in[3][10]
+data_in[3][11]
+data_in[3][1]
+data_in[3][2]
+data_in[3][3]
+data_in[3][4]
+data_in[3][5]
+data_in[3][6]
+data_in[3][7]
+data_in[3][8]
+data_in[3][9]
+data_in[40][0]
+data_in[40][10]
+data_in[40][11]
+data_in[40][1]
+data_in[40][2]
+data_in[40][3]
+data_in[40][4]
+data_in[40][5]
+data_in[40][6]
+data_in[40][7]
+data_in[40][8]
+data_in[40][9]
+data_in[41][0]
+data_in[41][10]
+data_in[41][11]
+data_in[41][1]
+data_in[41][2]
+data_in[41][3]
+data_in[41][4]
+data_in[41][5]
+data_in[41][6]
+data_in[41][7]
+data_in[41][8]
+data_in[41][9]
+data_in[42][0]
+data_in[42][10]
+data_in[42][11]
+data_in[42][1]
+data_in[42][2]
+data_in[42][3]
+data_in[42][4]
+data_in[42][5]
+data_in[42][6]
+data_in[42][7]
+data_in[42][8]
+data_in[42][9]
+data_in[43][0]
+data_in[43][10]
+data_in[43][11]
+data_in[43][1]
+data_in[43][2]
+data_in[43][3]
+data_in[43][4]
+data_in[43][5]
+data_in[43][6]
+data_in[43][7]
+data_in[43][8]
+data_in[43][9]
+data_in[44][0]
+data_in[44][10]
+data_in[44][11]
+data_in[44][1]
+data_in[44][2]
+data_in[44][3]
+data_in[44][4]
+data_in[44][5]
+data_in[44][6]
+data_in[44][7]
+data_in[44][8]
+data_in[44][9]
+data_in[45][0]
+data_in[45][10]
+data_in[45][11]
+data_in[45][1]
+data_in[45][2]
+data_in[45][3]
+data_in[45][4]
+data_in[45][5]
+data_in[45][6]
+data_in[45][7]
+data_in[45][8]
+data_in[45][9]
+data_in[46][0]
+data_in[46][10]
+data_in[46][11]
+data_in[46][1]
+data_in[46][2]
+data_in[46][3]
+data_in[46][4]
+data_in[46][5]
+data_in[46][6]
+data_in[46][7]
+data_in[46][8]
+data_in[46][9]
+data_in[47][0]
+data_in[47][10]
+data_in[47][11]
+data_in[47][1]
+data_in[47][2]
+data_in[47][3]
+data_in[47][4]
+data_in[47][5]
+data_in[47][6]
+data_in[47][7]
+data_in[47][8]
+data_in[47][9]
+data_in[48][0]
+data_in[48][10]
+data_in[48][11]
+data_in[48][1]
+data_in[48][2]
+data_in[48][3]
+data_in[48][4]
+data_in[48][5]
+data_in[48][6]
+data_in[48][7]
+data_in[48][8]
+data_in[48][9]
+data_in[49][0]
+data_in[49][10]
+data_in[49][11]
+data_in[49][1]
+data_in[49][2]
+data_in[49][3]
+data_in[49][4]
+data_in[49][5]
+data_in[49][6]
+data_in[49][7]
+data_in[49][8]
+data_in[49][9]
+data_in[4][0]
+data_in[4][10]
+data_in[4][11]
+data_in[4][1]
+data_in[4][2]
+data_in[4][3]
+data_in[4][4]
+data_in[4][5]
+data_in[4][6]
+data_in[4][7]
+data_in[4][8]
+data_in[4][9]
+data_in[50][0]
+data_in[50][10]
+data_in[50][11]
+data_in[50][1]
+data_in[50][2]
+data_in[50][3]
+data_in[50][4]
+data_in[50][5]
+data_in[50][6]
+data_in[50][7]
+data_in[50][8]
+data_in[50][9]
+data_in[51][0]
+data_in[51][10]
+data_in[51][11]
+data_in[51][1]
+data_in[51][2]
+data_in[51][3]
+data_in[51][4]
+data_in[51][5]
+data_in[51][6]
+data_in[51][7]
+data_in[51][8]
+data_in[51][9]
+data_in[52][0]
+data_in[52][10]
+data_in[52][11]
+data_in[52][1]
+data_in[52][2]
+data_in[52][3]
+data_in[52][4]
+data_in[52][5]
+data_in[52][6]
+data_in[52][7]
+data_in[52][8]
+data_in[52][9]
+data_in[53][0]
+data_in[53][10]
+data_in[53][11]
+data_in[53][1]
+data_in[53][2]
+data_in[53][3]
+data_in[53][4]
+data_in[53][5]
+data_in[53][6]
+data_in[53][7]
+data_in[53][8]
+data_in[53][9]
+data_in[54][0]
+data_in[54][10]
+data_in[54][11]
+data_in[54][1]
+data_in[54][2]
+data_in[54][3]
+data_in[54][4]
+data_in[54][5]
+data_in[54][6]
+data_in[54][7]
+data_in[54][8]
+data_in[54][9]
+data_in[55][0]
+data_in[55][10]
+data_in[55][11]
+data_in[55][1]
+data_in[55][2]
+data_in[55][3]
+data_in[55][4]
+data_in[55][5]
+data_in[55][6]
+data_in[55][7]
+data_in[55][8]
+data_in[55][9]
+data_in[56][0]
+data_in[56][10]
+data_in[56][11]
+data_in[56][1]
+data_in[56][2]
+data_in[56][3]
+data_in[56][4]
+data_in[56][5]
+data_in[56][6]
+data_in[56][7]
+data_in[56][8]
+data_in[56][9]
+data_in[57][0]
+data_in[57][10]
+data_in[57][11]
+data_in[57][1]
+data_in[57][2]
+data_in[57][3]
+data_in[57][4]
+data_in[57][5]
+data_in[57][6]
+data_in[57][7]
+data_in[57][8]
+data_in[57][9]
+data_in[58][0]
+data_in[58][10]
+data_in[58][11]
+data_in[58][1]
+data_in[58][2]
+data_in[58][3]
+data_in[58][4]
+data_in[58][5]
+data_in[58][6]
+data_in[58][7]
+data_in[58][8]
+data_in[58][9]
+data_in[59][0]
+data_in[59][10]
+data_in[59][11]
+data_in[59][1]
+data_in[59][2]
+data_in[59][3]
+data_in[59][4]
+data_in[59][5]
+data_in[59][6]
+data_in[59][7]
+data_in[59][8]
+data_in[59][9]
+data_in[5][0]
+data_in[5][10]
+data_in[5][11]
+data_in[5][1]
+data_in[5][2]
+data_in[5][3]
+data_in[5][4]
+data_in[5][5]
+data_in[5][6]
+data_in[5][7]
+data_in[5][8]
+data_in[5][9]
+data_in[60][0]
+data_in[60][10]
+data_in[60][11]
+data_in[60][1]
+data_in[60][2]
+data_in[60][3]
+data_in[60][4]
+data_in[60][5]
+data_in[60][6]
+data_in[60][7]
+data_in[60][8]
+data_in[60][9]
+data_in[61][0]
+data_in[61][10]
+data_in[61][11]
+data_in[61][1]
+data_in[61][2]
+data_in[61][3]
+data_in[61][4]
+data_in[61][5]
+data_in[61][6]
+data_in[61][7]
+data_in[61][8]
+data_in[61][9]
+data_in[62][0]
+data_in[62][10]
+data_in[62][11]
+data_in[62][1]
+data_in[62][2]
+data_in[62][3]
+data_in[62][4]
+data_in[62][5]
+data_in[62][6]
+data_in[62][7]
+data_in[62][8]
+data_in[62][9]
+data_in[63][0]
+data_in[63][10]
+data_in[63][11]
+data_in[63][1]
+data_in[63][2]
+data_in[63][3]
+data_in[63][4]
+data_in[63][5]
+data_in[63][6]
+data_in[63][7]
+data_in[63][8]
+data_in[63][9]
+data_in[64][0]
+data_in[64][10]
+data_in[64][11]
+data_in[64][1]
+data_in[64][2]
+data_in[64][3]
+data_in[64][4]
+data_in[64][5]
+data_in[64][6]
+data_in[64][7]
+data_in[64][8]
+data_in[64][9]
+data_in[65][0]
+data_in[65][10]
+data_in[65][11]
+data_in[65][1]
+data_in[65][2]
+data_in[65][3]
+data_in[65][4]
+data_in[65][5]
+data_in[65][6]
+data_in[65][7]
+data_in[65][8]
+data_in[65][9]
+data_in[66][0]
+data_in[66][10]
+data_in[66][11]
+data_in[66][1]
+data_in[66][2]
+data_in[66][3]
+data_in[66][4]
+data_in[66][5]
+data_in[66][6]
+data_in[66][7]
+data_in[66][8]
+data_in[66][9]
+data_in[67][0]
+data_in[67][10]
+data_in[67][11]
+data_in[67][1]
+data_in[67][2]
+data_in[67][3]
+data_in[67][4]
+data_in[67][5]
+data_in[67][6]
+data_in[67][7]
+data_in[67][8]
+data_in[67][9]
+data_in[68][0]
+data_in[68][10]
+data_in[68][11]
+data_in[68][1]
+data_in[68][2]
+data_in[68][3]
+data_in[68][4]
+data_in[68][5]
+data_in[68][6]
+data_in[68][7]
+data_in[68][8]
+data_in[68][9]
+data_in[69][0]
+data_in[69][10]
+data_in[69][11]
+data_in[69][1]
+data_in[69][2]
+data_in[69][3]
+data_in[69][4]
+data_in[69][5]
+data_in[69][6]
+data_in[69][7]
+data_in[69][8]
+data_in[69][9]
+data_in[6][0]
+data_in[6][10]
+data_in[6][11]
+data_in[6][1]
+data_in[6][2]
+data_in[6][3]
+data_in[6][4]
+data_in[6][5]
+data_in[6][6]
+data_in[6][7]
+data_in[6][8]
+data_in[6][9]
+data_in[70][0]
+data_in[70][10]
+data_in[70][11]
+data_in[70][1]
+data_in[70][2]
+data_in[70][3]
+data_in[70][4]
+data_in[70][5]
+data_in[70][6]
+data_in[70][7]
+data_in[70][8]
+data_in[70][9]
+data_in[71][0]
+data_in[71][10]
+data_in[71][11]
+data_in[71][1]
+data_in[71][2]
+data_in[71][3]
+data_in[71][4]
+data_in[71][5]
+data_in[71][6]
+data_in[71][7]
+data_in[71][8]
+data_in[71][9]
+data_in[72][0]
+data_in[72][10]
+data_in[72][11]
+data_in[72][1]
+data_in[72][2]
+data_in[72][3]
+data_in[72][4]
+data_in[72][5]
+data_in[72][6]
+data_in[72][7]
+data_in[72][8]
+data_in[72][9]
+data_in[73][0]
+data_in[73][10]
+data_in[73][11]
+data_in[73][1]
+data_in[73][2]
+data_in[73][3]
+data_in[73][4]
+data_in[73][5]
+data_in[73][6]
+data_in[73][7]
+data_in[73][8]
+data_in[73][9]
+data_in[74][0]
+data_in[74][10]
+data_in[74][11]
+data_in[74][1]
+data_in[74][2]
+data_in[74][3]
+data_in[74][4]
+data_in[74][5]
+data_in[74][6]
+data_in[74][7]
+data_in[74][8]
+data_in[74][9]
+data_in[75][0]
+data_in[75][10]
+data_in[75][11]
+data_in[75][1]
+data_in[75][2]
+data_in[75][3]
+data_in[75][4]
+data_in[75][5]
+data_in[75][6]
+data_in[75][7]
+data_in[75][8]
+data_in[75][9]
+data_in[76][0]
+data_in[76][10]
+data_in[76][11]
+data_in[76][1]
+data_in[76][2]
+data_in[76][3]
+data_in[76][4]
+data_in[76][5]
+data_in[76][6]
+data_in[76][7]
+data_in[76][8]
+data_in[76][9]
+data_in[77][0]
+data_in[77][10]
+data_in[77][11]
+data_in[77][1]
+data_in[77][2]
+data_in[77][3]
+data_in[77][4]
+data_in[77][5]
+data_in[77][6]
+data_in[77][7]
+data_in[77][8]
+data_in[77][9]
+data_in[78][0]
+data_in[78][10]
+data_in[78][11]
+data_in[78][1]
+data_in[78][2]
+data_in[78][3]
+data_in[78][4]
+data_in[78][5]
+data_in[78][6]
+data_in[78][7]
+data_in[78][8]
+data_in[78][9]
+data_in[79][0]
+data_in[79][10]
+data_in[79][11]
+data_in[79][1]
+data_in[79][2]
+data_in[79][3]
+data_in[79][4]
+data_in[79][5]
+data_in[79][6]
+data_in[79][7]
+data_in[79][8]
+data_in[79][9]
+data_in[7][0]
+data_in[7][10]
+data_in[7][11]
+data_in[7][1]
+data_in[7][2]
+data_in[7][3]
+data_in[7][4]
+data_in[7][5]
+data_in[7][6]
+data_in[7][7]
+data_in[7][8]
+data_in[7][9]
+data_in[80][0]
+data_in[80][10]
+data_in[80][11]
+data_in[80][1]
+data_in[80][2]
+data_in[80][3]
+data_in[80][4]
+data_in[80][5]
+data_in[80][6]
+data_in[80][7]
+data_in[80][8]
+data_in[80][9]
+data_in[81][0]
+data_in[81][10]
+data_in[81][11]
+data_in[81][1]
+data_in[81][2]
+data_in[81][3]
+data_in[81][4]
+data_in[81][5]
+data_in[81][6]
+data_in[81][7]
+data_in[81][8]
+data_in[81][9]
+data_in[82][0]
+data_in[82][10]
+data_in[82][11]
+data_in[82][1]
+data_in[82][2]
+data_in[82][3]
+data_in[82][4]
+data_in[82][5]
+data_in[82][6]
+data_in[82][7]
+data_in[82][8]
+data_in[82][9]
+data_in[83][0]
+data_in[83][10]
+data_in[83][11]
+data_in[83][1]
+data_in[83][2]
+data_in[83][3]
+data_in[83][4]
+data_in[83][5]
+data_in[83][6]
+data_in[83][7]
+data_in[83][8]
+data_in[83][9]
+data_in[84][0]
+data_in[84][10]
+data_in[84][11]
+data_in[84][1]
+data_in[84][2]
+data_in[84][3]
+data_in[84][4]
+data_in[84][5]
+data_in[84][6]
+data_in[84][7]
+data_in[84][8]
+data_in[84][9]
+data_in[85][0]
+data_in[85][10]
+data_in[85][11]
+data_in[85][1]
+data_in[85][2]
+data_in[85][3]
+data_in[85][4]
+data_in[85][5]
+data_in[85][6]
+data_in[85][7]
+data_in[85][8]
+data_in[85][9]
+data_in[86][0]
+data_in[86][10]
+data_in[86][11]
+data_in[86][1]
+data_in[86][2]
+data_in[86][3]
+data_in[86][4]
+data_in[86][5]
+data_in[86][6]
+data_in[86][7]
+data_in[86][8]
+data_in[86][9]
+data_in[87][0]
+data_in[87][10]
+data_in[87][11]
+data_in[87][1]
+data_in[87][2]
+data_in[87][3]
+data_in[87][4]
+data_in[87][5]
+data_in[87][6]
+data_in[87][7]
+data_in[87][8]
+data_in[87][9]
+data_in[88][0]
+data_in[88][10]
+data_in[88][11]
+data_in[88][1]
+data_in[88][2]
+data_in[88][3]
+data_in[88][4]
+data_in[88][5]
+data_in[88][6]
+data_in[88][7]
+data_in[88][8]
+data_in[88][9]
+data_in[89][0]
+data_in[89][10]
+data_in[89][11]
+data_in[89][1]
+data_in[89][2]
+data_in[89][3]
+data_in[89][4]
+data_in[89][5]
+data_in[89][6]
+data_in[89][7]
+data_in[89][8]
+data_in[89][9]
+data_in[8][0]
+data_in[8][10]
+data_in[8][11]
+data_in[8][1]
+data_in[8][2]
+data_in[8][3]
+data_in[8][4]
+data_in[8][5]
+data_in[8][6]
+data_in[8][7]
+data_in[8][8]
+data_in[8][9]
+data_in[90][0]
+data_in[90][10]
+data_in[90][11]
+data_in[90][1]
+data_in[90][2]
+data_in[90][3]
+data_in[90][4]
+data_in[90][5]
+data_in[90][6]
+data_in[90][7]
+data_in[90][8]
+data_in[90][9]
+data_in[91][0]
+data_in[91][10]
+data_in[91][11]
+data_in[91][1]
+data_in[91][2]
+data_in[91][3]
+data_in[91][4]
+data_in[91][5]
+data_in[91][6]
+data_in[91][7]
+data_in[91][8]
+data_in[91][9]
+data_in[92][0]
+data_in[92][10]
+data_in[92][11]
+data_in[92][1]
+data_in[92][2]
+data_in[92][3]
+data_in[92][4]
+data_in[92][5]
+data_in[92][6]
+data_in[92][7]
+data_in[92][8]
+data_in[92][9]
+data_in[93][0]
+data_in[93][10]
+data_in[93][11]
+data_in[93][1]
+data_in[93][2]
+data_in[93][3]
+data_in[93][4]
+data_in[93][5]
+data_in[93][6]
+data_in[93][7]
+data_in[93][8]
+data_in[93][9]
+data_in[94][0]
+data_in[94][10]
+data_in[94][11]
+data_in[94][1]
+data_in[94][2]
+data_in[94][3]
+data_in[94][4]
+data_in[94][5]
+data_in[94][6]
+data_in[94][7]
+data_in[94][8]
+data_in[94][9]
+data_in[95][0]
+data_in[95][10]
+data_in[95][11]
+data_in[95][1]
+data_in[95][2]
+data_in[95][3]
+data_in[95][4]
+data_in[95][5]
+data_in[95][6]
+data_in[95][7]
+data_in[95][8]
+data_in[95][9]
+data_in[96][0]
+data_in[96][10]
+data_in[96][11]
+data_in[96][1]
+data_in[96][2]
+data_in[96][3]
+data_in[96][4]
+data_in[96][5]
+data_in[96][6]
+data_in[96][7]
+data_in[96][8]
+data_in[96][9]
+data_in[97][0]
+data_in[97][10]
+data_in[97][11]
+data_in[97][1]
+data_in[97][2]
+data_in[97][3]
+data_in[97][4]
+data_in[97][5]
+data_in[97][6]
+data_in[97][7]
+data_in[97][8]
+data_in[97][9]
+data_in[98][0]
+data_in[98][10]
+data_in[98][11]
+data_in[98][1]
+data_in[98][2]
+data_in[98][3]
+data_in[98][4]
+data_in[98][5]
+data_in[98][6]
+data_in[98][7]
+data_in[98][8]
+data_in[98][9]
+data_in[99][0]
+data_in[99][10]
+data_in[99][11]
+data_in[99][1]
+data_in[99][2]
+data_in[99][3]
+data_in[99][4]
+data_in[99][5]
+data_in[99][6]
+data_in[99][7]
+data_in[99][8]
+data_in[99][9]
+data_in[9][0]
+data_in[9][10]
+data_in[9][11]
+data_in[9][1]
+data_in[9][2]
+data_in[9][3]
+data_in[9][4]
+data_in[9][5]
+data_in[9][6]
+data_in[9][7]
+data_in[9][8]
+data_in[9][9]
+reset
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 45 ports with no output delay specified. (HIGH)
+
+ce_out
+data_out[0]
+data_out[10]
+data_out[11]
+data_out[12]
+data_out[13]
+data_out[14]
+data_out[15]
+data_out[16]
+data_out[17]
+data_out[18]
+data_out[19]
+data_out[1]
+data_out[20]
+data_out[21]
+data_out[22]
+data_out[23]
+data_out[24]
+data_out[25]
+data_out[26]
+data_out[27]
+data_out[28]
+data_out[29]
+data_out[2]
+data_out[30]
+data_out[31]
+data_out[32]
+data_out[33]
+data_out[34]
+data_out[35]
+data_out[36]
+data_out[37]
+data_out[38]
+data_out[39]
+data_out[3]
+data_out[40]
+data_out[41]
+data_out[42]
+data_out[4]
+data_out[5]
+data_out[6]
+data_out[7]
+data_out[8]
+data_out[9]
+valid_out
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     22.822        0.000                      0                  553        0.136        0.000                      0                  553       18.881        0.000                       0                   404  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+MWCLK  {0.000 19.231}     38.462          26.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+MWCLK              22.822        0.000                      0                  553        0.136        0.000                      0                  553       18.881        0.000                       0                   404  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+(none)        MWCLK                       
+(none)                      MWCLK         
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  MWCLK
+  To Clock:  MWCLK
+
+Setup :            0  Failing Endpoints,  Worst Slack       22.822ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.136ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       18.881ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             22.822ns  (required time - arrival time)
+  Source:                 Product_out1_1_reg[34]/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            Divide_out1_dlyBalance_reg[36]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            38.462ns  (MWCLK rise@38.462ns - MWCLK rise@0.000ns)
+  Data Path Delay:        15.634ns  (logic 7.205ns (46.084%)  route 8.429ns (53.916%))
+  Logic Levels:           56  (CARRY4=35 LUT1=1 LUT3=8 LUT4=5 LUT5=2 LUT6=5)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 38.972 - 38.462 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.537     0.537    clk
+                         DSP48E1                                      r  Product_out1_1_reg[34]/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[2])
+                                                      0.348     0.885 r  Product_out1_1_reg[34]/P[2]
+                         net (fo=2, unplaced)         0.466     1.351    Product_out1_1_reg_n_103_[34]
+                         LUT3 (Prop_lut3_I1_O)        0.052     1.403 r  Divide_out1_dlyBalance[11]_i_277/O
+                         net (fo=2, unplaced)         0.304     1.707    Divide_out1_dlyBalance[11]_i_277_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     1.839 r  Divide_out1_dlyBalance[11]_i_280/O
+                         net (fo=1, unplaced)         0.000     1.839    Divide_out1_dlyBalance[11]_i_280_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     2.032 r  Divide_out1_dlyBalance_reg[11]_i_245/CO[3]
+                         net (fo=1, unplaced)         0.007     2.039    Divide_out1_dlyBalance_reg[11]_i_245_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     2.158 r  Divide_out1_dlyBalance_reg[15]_i_244/O[2]
+                         net (fo=2, unplaced)         0.418     2.576    Divide_out1_dlyBalance_reg[15]_i_244_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.136     2.712 r  Divide_out1_dlyBalance[11]_i_149/O
+                         net (fo=2, unplaced)         0.304     3.016    Divide_out1_dlyBalance[11]_i_149_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.148 r  Divide_out1_dlyBalance[11]_i_153/O
+                         net (fo=1, unplaced)         0.000     3.148    Divide_out1_dlyBalance[11]_i_153_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     3.341 r  Divide_out1_dlyBalance_reg[11]_i_137/CO[3]
+                         net (fo=1, unplaced)         0.000     3.341    Divide_out1_dlyBalance_reg[11]_i_137_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     3.460 r  Divide_out1_dlyBalance_reg[15]_i_136/O[2]
+                         net (fo=2, unplaced)         0.418     3.878    Divide_out1_dlyBalance_reg[15]_i_136_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.136     4.014 r  Divide_out1_dlyBalance[11]_i_105/O
+                         net (fo=2, unplaced)         0.304     4.318    Divide_out1_dlyBalance[11]_i_105_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     4.450 r  Divide_out1_dlyBalance[11]_i_109/O
+                         net (fo=1, unplaced)         0.000     4.450    Divide_out1_dlyBalance[11]_i_109_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.643 r  Divide_out1_dlyBalance_reg[11]_i_99/CO[3]
+                         net (fo=1, unplaced)         0.000     4.643    Divide_out1_dlyBalance_reg[11]_i_99_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.117     4.760 r  Divide_out1_dlyBalance_reg[15]_i_98/O[0]
+                         net (fo=3, unplaced)         0.445     5.205    Divide_out1_dlyBalance_reg[15]_i_98_n_7
+                         LUT3 (Prop_lut3_I0_O)        0.123     5.328 r  Divide_out1_dlyBalance[11]_i_102/O
+                         net (fo=2, unplaced)         0.281     5.609    Divide_out1_dlyBalance[11]_i_102_n_0
+                         LUT5 (Prop_lut5_I4_O)        0.043     5.652 r  Divide_out1_dlyBalance[11]_i_63/O
+                         net (fo=2, unplaced)         0.281     5.933    Divide_out1_dlyBalance[11]_i_63_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043     5.976 r  Divide_out1_dlyBalance[11]_i_67/O
+                         net (fo=1, unplaced)         0.000     5.976    Divide_out1_dlyBalance[11]_i_67_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.243 r  Divide_out1_dlyBalance_reg[11]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     6.243    Divide_out1_dlyBalance_reg[11]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     6.362 f  Divide_out1_dlyBalance_reg[15]_i_52/O[2]
+                         net (fo=23, unplaced)        0.333     6.695    Sum_of_Elements_out1[18]
+                         LUT1 (Prop_lut1_I0_O)        0.127     6.822 r  Divide_out1_dlyBalance[19]_i_70/O
+                         net (fo=1, unplaced)         0.000     6.822    Divide_out1_dlyBalance[19]_i_70_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     7.089 r  Divide_out1_dlyBalance_reg[19]_i_53/CO[3]
+                         net (fo=1, unplaced)         0.000     7.089    Divide_out1_dlyBalance_reg[19]_i_53_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     7.142 r  Divide_out1_dlyBalance_reg[23]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     7.142    Divide_out1_dlyBalance_reg[23]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     7.195 r  Divide_out1_dlyBalance_reg[27]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     7.195    Divide_out1_dlyBalance_reg[27]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173     7.368 r  Divide_out1_dlyBalance_reg[37]_i_90/O[1]
+                         net (fo=21, unplaced)        0.412     7.780    Divide_out16[30]
+                         LUT3 (Prop_lut3_I0_O)        0.134     7.914 r  Divide_out1_dlyBalance[27]_i_55/O
+                         net (fo=26, unplaced)        0.598     8.512    Divide_out1_dlyBalance[27]_i_55_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043     8.555 r  Divide_out1_dlyBalance[3]_i_235/O
+                         net (fo=1, unplaced)         0.000     8.555    Divide_out1_dlyBalance[3]_i_235_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     8.822 r  Divide_out1_dlyBalance_reg[3]_i_136/CO[3]
+                         net (fo=1, unplaced)         0.000     8.822    Divide_out1_dlyBalance_reg[3]_i_136_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.875 r  Divide_out1_dlyBalance_reg[7]_i_61/CO[3]
+                         net (fo=1, unplaced)         0.000     8.875    Divide_out1_dlyBalance_reg[7]_i_61_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.928 r  Divide_out1_dlyBalance_reg[11]_i_60/CO[3]
+                         net (fo=1, unplaced)         0.000     8.928    Divide_out1_dlyBalance_reg[11]_i_60_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.981 r  Divide_out1_dlyBalance_reg[15]_i_60/CO[3]
+                         net (fo=1, unplaced)         0.000     8.981    Divide_out1_dlyBalance_reg[15]_i_60_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     9.034 f  Divide_out1_dlyBalance_reg[37]_i_77/CO[3]
+                         net (fo=42, unplaced)        0.490     9.524    Divide_out1_dlyBalance_reg[37]_i_77_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.048     9.572 r  Divide_out1_dlyBalance[19]_i_44/O
+                         net (fo=2, unplaced)         0.304     9.876    Divide_out1_dlyBalance[19]_i_44_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132    10.008 r  Divide_out1_dlyBalance[19]_i_48/O
+                         net (fo=1, unplaced)         0.000    10.008    Divide_out1_dlyBalance[19]_i_48_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193    10.201 r  Divide_out1_dlyBalance_reg[19]_i_19/CO[3]
+                         net (fo=1, unplaced)         0.000    10.201    Divide_out1_dlyBalance_reg[19]_i_19_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    10.254 r  Divide_out1_dlyBalance_reg[23]_i_19/CO[3]
+                         net (fo=1, unplaced)         0.000    10.254    Divide_out1_dlyBalance_reg[23]_i_19_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173    10.427 r  Divide_out1_dlyBalance_reg[27]_i_19/O[1]
+                         net (fo=3, unplaced)         0.369    10.796    Divide_out1_dlyBalance_reg[27]_i_19_n_6
+                         LUT3 (Prop_lut3_I1_O)        0.125    10.921 r  Divide_out1_dlyBalance[23]_i_17/O
+                         net (fo=2, unplaced)         0.281    11.202    Divide_out1_dlyBalance[23]_i_17_n_0
+                         LUT5 (Prop_lut5_I1_O)        0.043    11.245 r  Divide_out1_dlyBalance[23]_i_6/O
+                         net (fo=2, unplaced)         0.281    11.526    Divide_out1_dlyBalance[23]_i_6_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043    11.569 r  Divide_out1_dlyBalance[23]_i_10/O
+                         net (fo=1, unplaced)         0.000    11.569    Divide_out1_dlyBalance[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.836 r  Divide_out1_dlyBalance_reg[23]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    11.836    Divide_out1_dlyBalance_reg[23]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119    11.955 r  Divide_out1_dlyBalance_reg[27]_i_2/O[2]
+                         net (fo=12, unplaced)        0.455    12.410    Divide_out1_dlyBalance_reg[27]_i_2_n_5
+                         LUT3 (Prop_lut3_I1_O)        0.127    12.537 r  Divide_out1_dlyBalance[37]_i_98/O
+                         net (fo=1, unplaced)         0.281    12.818    Divide_out1_dlyBalance[37]_i_98_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.250    13.068 r  Divide_out1_dlyBalance_reg[37]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000    13.068    Divide_out1_dlyBalance_reg[37]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173    13.241 r  Divide_out1_dlyBalance_reg[37]_i_24/O[1]
+                         net (fo=3, unplaced)         0.207    13.448    Divide_out1_dlyBalance_reg[37]_i_24_n_6
+                         LUT4 (Prop_lut4_I0_O)        0.125    13.573 r  Divide_out1_dlyBalance[37]_i_54/O
+                         net (fo=1, unplaced)         0.281    13.854    Divide_out1_dlyBalance[37]_i_54_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.250    14.104 r  Divide_out1_dlyBalance_reg[37]_i_16/CO[3]
+                         net (fo=1, unplaced)         0.000    14.104    Divide_out1_dlyBalance_reg[37]_i_16_n_0
+                         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.089    14.193 r  Divide_out1_dlyBalance_reg[37]_i_8/CO[1]
+                         net (fo=39, unplaced)        0.265    14.458    Divide_out1_dlyBalance_reg[37]_i_8_n_2
+                         LUT6 (Prop_lut6_I4_O)        0.124    14.582 r  Divide_out1_dlyBalance[4]_i_7/O
+                         net (fo=1, unplaced)         0.359    14.941    Divide_out1_dlyBalance[4]_i_7_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.299    15.240 r  Divide_out1_dlyBalance_reg[4]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.007    15.247    Divide_out1_dlyBalance_reg[4]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.300 r  Divide_out1_dlyBalance_reg[8]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.300    Divide_out1_dlyBalance_reg[8]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.353 r  Divide_out1_dlyBalance_reg[12]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.353    Divide_out1_dlyBalance_reg[12]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.406 r  Divide_out1_dlyBalance_reg[16]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.406    Divide_out1_dlyBalance_reg[16]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.459 r  Divide_out1_dlyBalance_reg[20]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.459    Divide_out1_dlyBalance_reg[20]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.512 r  Divide_out1_dlyBalance_reg[24]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.512    Divide_out1_dlyBalance_reg[24]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.565 r  Divide_out1_dlyBalance_reg[28]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.565    Divide_out1_dlyBalance_reg[28]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.618 r  Divide_out1_dlyBalance_reg[32]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.618    Divide_out1_dlyBalance_reg[32]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.155    15.773 r  Divide_out1_dlyBalance_reg[36]_i_2/O[3]
+                         net (fo=1, unplaced)         0.278    16.051    Divide_out14[36]
+                         LUT6 (Prop_lut6_I0_O)        0.120    16.171 r  Divide_out1_dlyBalance[36]_i_1/O
+                         net (fo=1, unplaced)         0.000    16.171    p_1_in__0[36]
+                         FDRE                                         r  Divide_out1_dlyBalance_reg[36]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)     38.462    38.462 r  
+                                                      0.000    38.462 r  clk (IN)
+                         net (fo=403, unset)          0.510    38.972    clk
+                         FDRE                                         r  Divide_out1_dlyBalance_reg[36]/C
+                         clock pessimism              0.000    38.972    
+                         clock uncertainty           -0.035    38.937    
+                         FDRE (Setup_fdre_C_D)        0.057    38.994    Divide_out1_dlyBalance_reg[36]
+  -------------------------------------------------------------------
+                         required time                         38.994    
+                         arrival time                         -16.171    
+  -------------------------------------------------------------------
+                         slack                                 22.822    
+
+Slack (MET) :             22.822ns  (required time - arrival time)
+  Source:                 Product_out1_1_reg[34]/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            Divide_out1_dlyBalance_reg[36]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            38.462ns  (MWCLK rise@38.462ns - MWCLK rise@0.000ns)
+  Data Path Delay:        15.634ns  (logic 7.205ns (46.084%)  route 8.429ns (53.916%))
+  Logic Levels:           56  (CARRY4=35 LUT1=1 LUT3=8 LUT4=5 LUT5=2 LUT6=5)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 38.972 - 38.462 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.537     0.537    clk
+                         DSP48E1                                      r  Product_out1_1_reg[34]/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[2])
+                                                      0.348     0.885 r  Product_out1_1_reg[34]/P[2]
+                         net (fo=2, unplaced)         0.466     1.351    Product_out1_1_reg_n_103_[34]
+                         LUT3 (Prop_lut3_I1_O)        0.052     1.403 r  Divide_out1_dlyBalance[11]_i_277/O
+                         net (fo=2, unplaced)         0.304     1.707    Divide_out1_dlyBalance[11]_i_277_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     1.839 r  Divide_out1_dlyBalance[11]_i_280/O
+                         net (fo=1, unplaced)         0.000     1.839    Divide_out1_dlyBalance[11]_i_280_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     2.032 r  Divide_out1_dlyBalance_reg[11]_i_245/CO[3]
+                         net (fo=1, unplaced)         0.007     2.039    Divide_out1_dlyBalance_reg[11]_i_245_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     2.158 r  Divide_out1_dlyBalance_reg[15]_i_244/O[2]
+                         net (fo=2, unplaced)         0.418     2.576    Divide_out1_dlyBalance_reg[15]_i_244_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.136     2.712 r  Divide_out1_dlyBalance[11]_i_149/O
+                         net (fo=2, unplaced)         0.304     3.016    Divide_out1_dlyBalance[11]_i_149_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.148 r  Divide_out1_dlyBalance[11]_i_153/O
+                         net (fo=1, unplaced)         0.000     3.148    Divide_out1_dlyBalance[11]_i_153_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     3.341 r  Divide_out1_dlyBalance_reg[11]_i_137/CO[3]
+                         net (fo=1, unplaced)         0.000     3.341    Divide_out1_dlyBalance_reg[11]_i_137_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     3.460 f  Divide_out1_dlyBalance_reg[15]_i_136/O[2]
+                         net (fo=2, unplaced)         0.418     3.878    Divide_out1_dlyBalance_reg[15]_i_136_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.136     4.014 f  Divide_out1_dlyBalance[11]_i_105/O
+                         net (fo=2, unplaced)         0.304     4.318    Divide_out1_dlyBalance[11]_i_105_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     4.450 r  Divide_out1_dlyBalance[11]_i_109/O
+                         net (fo=1, unplaced)         0.000     4.450    Divide_out1_dlyBalance[11]_i_109_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.643 r  Divide_out1_dlyBalance_reg[11]_i_99/CO[3]
+                         net (fo=1, unplaced)         0.000     4.643    Divide_out1_dlyBalance_reg[11]_i_99_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.117     4.760 r  Divide_out1_dlyBalance_reg[15]_i_98/O[0]
+                         net (fo=3, unplaced)         0.445     5.205    Divide_out1_dlyBalance_reg[15]_i_98_n_7
+                         LUT3 (Prop_lut3_I0_O)        0.123     5.328 r  Divide_out1_dlyBalance[11]_i_102/O
+                         net (fo=2, unplaced)         0.281     5.609    Divide_out1_dlyBalance[11]_i_102_n_0
+                         LUT5 (Prop_lut5_I4_O)        0.043     5.652 r  Divide_out1_dlyBalance[11]_i_63/O
+                         net (fo=2, unplaced)         0.281     5.933    Divide_out1_dlyBalance[11]_i_63_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043     5.976 r  Divide_out1_dlyBalance[11]_i_67/O
+                         net (fo=1, unplaced)         0.000     5.976    Divide_out1_dlyBalance[11]_i_67_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.243 r  Divide_out1_dlyBalance_reg[11]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     6.243    Divide_out1_dlyBalance_reg[11]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     6.362 f  Divide_out1_dlyBalance_reg[15]_i_52/O[2]
+                         net (fo=23, unplaced)        0.333     6.695    Sum_of_Elements_out1[18]
+                         LUT1 (Prop_lut1_I0_O)        0.127     6.822 r  Divide_out1_dlyBalance[19]_i_70/O
+                         net (fo=1, unplaced)         0.000     6.822    Divide_out1_dlyBalance[19]_i_70_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     7.089 r  Divide_out1_dlyBalance_reg[19]_i_53/CO[3]
+                         net (fo=1, unplaced)         0.000     7.089    Divide_out1_dlyBalance_reg[19]_i_53_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     7.142 r  Divide_out1_dlyBalance_reg[23]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     7.142    Divide_out1_dlyBalance_reg[23]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     7.195 r  Divide_out1_dlyBalance_reg[27]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     7.195    Divide_out1_dlyBalance_reg[27]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173     7.368 r  Divide_out1_dlyBalance_reg[37]_i_90/O[1]
+                         net (fo=21, unplaced)        0.412     7.780    Divide_out16[30]
+                         LUT3 (Prop_lut3_I0_O)        0.134     7.914 r  Divide_out1_dlyBalance[27]_i_55/O
+                         net (fo=26, unplaced)        0.598     8.512    Divide_out1_dlyBalance[27]_i_55_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043     8.555 r  Divide_out1_dlyBalance[3]_i_235/O
+                         net (fo=1, unplaced)         0.000     8.555    Divide_out1_dlyBalance[3]_i_235_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     8.822 r  Divide_out1_dlyBalance_reg[3]_i_136/CO[3]
+                         net (fo=1, unplaced)         0.000     8.822    Divide_out1_dlyBalance_reg[3]_i_136_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.875 r  Divide_out1_dlyBalance_reg[7]_i_61/CO[3]
+                         net (fo=1, unplaced)         0.000     8.875    Divide_out1_dlyBalance_reg[7]_i_61_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.928 r  Divide_out1_dlyBalance_reg[11]_i_60/CO[3]
+                         net (fo=1, unplaced)         0.000     8.928    Divide_out1_dlyBalance_reg[11]_i_60_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.981 r  Divide_out1_dlyBalance_reg[15]_i_60/CO[3]
+                         net (fo=1, unplaced)         0.000     8.981    Divide_out1_dlyBalance_reg[15]_i_60_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     9.034 f  Divide_out1_dlyBalance_reg[37]_i_77/CO[3]
+                         net (fo=42, unplaced)        0.490     9.524    Divide_out1_dlyBalance_reg[37]_i_77_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.048     9.572 r  Divide_out1_dlyBalance[19]_i_44/O
+                         net (fo=2, unplaced)         0.304     9.876    Divide_out1_dlyBalance[19]_i_44_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132    10.008 r  Divide_out1_dlyBalance[19]_i_48/O
+                         net (fo=1, unplaced)         0.000    10.008    Divide_out1_dlyBalance[19]_i_48_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193    10.201 r  Divide_out1_dlyBalance_reg[19]_i_19/CO[3]
+                         net (fo=1, unplaced)         0.000    10.201    Divide_out1_dlyBalance_reg[19]_i_19_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    10.254 r  Divide_out1_dlyBalance_reg[23]_i_19/CO[3]
+                         net (fo=1, unplaced)         0.000    10.254    Divide_out1_dlyBalance_reg[23]_i_19_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173    10.427 r  Divide_out1_dlyBalance_reg[27]_i_19/O[1]
+                         net (fo=3, unplaced)         0.369    10.796    Divide_out1_dlyBalance_reg[27]_i_19_n_6
+                         LUT3 (Prop_lut3_I1_O)        0.125    10.921 r  Divide_out1_dlyBalance[23]_i_17/O
+                         net (fo=2, unplaced)         0.281    11.202    Divide_out1_dlyBalance[23]_i_17_n_0
+                         LUT5 (Prop_lut5_I1_O)        0.043    11.245 r  Divide_out1_dlyBalance[23]_i_6/O
+                         net (fo=2, unplaced)         0.281    11.526    Divide_out1_dlyBalance[23]_i_6_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043    11.569 r  Divide_out1_dlyBalance[23]_i_10/O
+                         net (fo=1, unplaced)         0.000    11.569    Divide_out1_dlyBalance[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.836 r  Divide_out1_dlyBalance_reg[23]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    11.836    Divide_out1_dlyBalance_reg[23]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119    11.955 r  Divide_out1_dlyBalance_reg[27]_i_2/O[2]
+                         net (fo=12, unplaced)        0.455    12.410    Divide_out1_dlyBalance_reg[27]_i_2_n_5
+                         LUT3 (Prop_lut3_I1_O)        0.127    12.537 r  Divide_out1_dlyBalance[37]_i_98/O
+                         net (fo=1, unplaced)         0.281    12.818    Divide_out1_dlyBalance[37]_i_98_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.250    13.068 r  Divide_out1_dlyBalance_reg[37]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000    13.068    Divide_out1_dlyBalance_reg[37]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173    13.241 r  Divide_out1_dlyBalance_reg[37]_i_24/O[1]
+                         net (fo=3, unplaced)         0.207    13.448    Divide_out1_dlyBalance_reg[37]_i_24_n_6
+                         LUT4 (Prop_lut4_I0_O)        0.125    13.573 r  Divide_out1_dlyBalance[37]_i_54/O
+                         net (fo=1, unplaced)         0.281    13.854    Divide_out1_dlyBalance[37]_i_54_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.250    14.104 r  Divide_out1_dlyBalance_reg[37]_i_16/CO[3]
+                         net (fo=1, unplaced)         0.000    14.104    Divide_out1_dlyBalance_reg[37]_i_16_n_0
+                         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.089    14.193 r  Divide_out1_dlyBalance_reg[37]_i_8/CO[1]
+                         net (fo=39, unplaced)        0.265    14.458    Divide_out1_dlyBalance_reg[37]_i_8_n_2
+                         LUT6 (Prop_lut6_I4_O)        0.124    14.582 r  Divide_out1_dlyBalance[4]_i_7/O
+                         net (fo=1, unplaced)         0.359    14.941    Divide_out1_dlyBalance[4]_i_7_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.299    15.240 r  Divide_out1_dlyBalance_reg[4]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.007    15.247    Divide_out1_dlyBalance_reg[4]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.300 r  Divide_out1_dlyBalance_reg[8]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.300    Divide_out1_dlyBalance_reg[8]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.353 r  Divide_out1_dlyBalance_reg[12]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.353    Divide_out1_dlyBalance_reg[12]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.406 r  Divide_out1_dlyBalance_reg[16]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.406    Divide_out1_dlyBalance_reg[16]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.459 r  Divide_out1_dlyBalance_reg[20]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.459    Divide_out1_dlyBalance_reg[20]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.512 r  Divide_out1_dlyBalance_reg[24]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.512    Divide_out1_dlyBalance_reg[24]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.565 r  Divide_out1_dlyBalance_reg[28]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.565    Divide_out1_dlyBalance_reg[28]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.618 r  Divide_out1_dlyBalance_reg[32]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.618    Divide_out1_dlyBalance_reg[32]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.155    15.773 r  Divide_out1_dlyBalance_reg[36]_i_2/O[3]
+                         net (fo=1, unplaced)         0.278    16.051    Divide_out14[36]
+                         LUT6 (Prop_lut6_I0_O)        0.120    16.171 r  Divide_out1_dlyBalance[36]_i_1/O
+                         net (fo=1, unplaced)         0.000    16.171    p_1_in__0[36]
+                         FDRE                                         r  Divide_out1_dlyBalance_reg[36]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)     38.462    38.462 r  
+                                                      0.000    38.462 r  clk (IN)
+                         net (fo=403, unset)          0.510    38.972    clk
+                         FDRE                                         r  Divide_out1_dlyBalance_reg[36]/C
+                         clock pessimism              0.000    38.972    
+                         clock uncertainty           -0.035    38.937    
+                         FDRE (Setup_fdre_C_D)        0.057    38.994    Divide_out1_dlyBalance_reg[36]
+  -------------------------------------------------------------------
+                         required time                         38.994    
+                         arrival time                         -16.171    
+  -------------------------------------------------------------------
+                         slack                                 22.822    
+
+Slack (MET) :             22.822ns  (required time - arrival time)
+  Source:                 Product_out1_1_reg[34]/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            Divide_out1_dlyBalance_reg[36]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            38.462ns  (MWCLK rise@38.462ns - MWCLK rise@0.000ns)
+  Data Path Delay:        15.634ns  (logic 7.205ns (46.084%)  route 8.429ns (53.916%))
+  Logic Levels:           56  (CARRY4=35 LUT1=1 LUT3=8 LUT4=5 LUT5=2 LUT6=5)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 38.972 - 38.462 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.537     0.537    clk
+                         DSP48E1                                      r  Product_out1_1_reg[34]/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[2])
+                                                      0.348     0.885 r  Product_out1_1_reg[34]/P[2]
+                         net (fo=2, unplaced)         0.466     1.351    Product_out1_1_reg_n_103_[34]
+                         LUT3 (Prop_lut3_I1_O)        0.052     1.403 r  Divide_out1_dlyBalance[11]_i_277/O
+                         net (fo=2, unplaced)         0.304     1.707    Divide_out1_dlyBalance[11]_i_277_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     1.839 r  Divide_out1_dlyBalance[11]_i_280/O
+                         net (fo=1, unplaced)         0.000     1.839    Divide_out1_dlyBalance[11]_i_280_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     2.032 r  Divide_out1_dlyBalance_reg[11]_i_245/CO[3]
+                         net (fo=1, unplaced)         0.007     2.039    Divide_out1_dlyBalance_reg[11]_i_245_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     2.158 r  Divide_out1_dlyBalance_reg[15]_i_244/O[2]
+                         net (fo=2, unplaced)         0.418     2.576    Divide_out1_dlyBalance_reg[15]_i_244_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.136     2.712 r  Divide_out1_dlyBalance[11]_i_149/O
+                         net (fo=2, unplaced)         0.304     3.016    Divide_out1_dlyBalance[11]_i_149_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.148 r  Divide_out1_dlyBalance[11]_i_153/O
+                         net (fo=1, unplaced)         0.000     3.148    Divide_out1_dlyBalance[11]_i_153_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     3.341 r  Divide_out1_dlyBalance_reg[11]_i_137/CO[3]
+                         net (fo=1, unplaced)         0.000     3.341    Divide_out1_dlyBalance_reg[11]_i_137_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     3.460 r  Divide_out1_dlyBalance_reg[15]_i_136/O[2]
+                         net (fo=2, unplaced)         0.418     3.878    Divide_out1_dlyBalance_reg[15]_i_136_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.136     4.014 r  Divide_out1_dlyBalance[11]_i_105/O
+                         net (fo=2, unplaced)         0.304     4.318    Divide_out1_dlyBalance[11]_i_105_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     4.450 r  Divide_out1_dlyBalance[11]_i_109/O
+                         net (fo=1, unplaced)         0.000     4.450    Divide_out1_dlyBalance[11]_i_109_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.643 r  Divide_out1_dlyBalance_reg[11]_i_99/CO[3]
+                         net (fo=1, unplaced)         0.000     4.643    Divide_out1_dlyBalance_reg[11]_i_99_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.117     4.760 f  Divide_out1_dlyBalance_reg[15]_i_98/O[0]
+                         net (fo=3, unplaced)         0.445     5.205    Divide_out1_dlyBalance_reg[15]_i_98_n_7
+                         LUT3 (Prop_lut3_I0_O)        0.123     5.328 r  Divide_out1_dlyBalance[11]_i_102/O
+                         net (fo=2, unplaced)         0.281     5.609    Divide_out1_dlyBalance[11]_i_102_n_0
+                         LUT5 (Prop_lut5_I4_O)        0.043     5.652 r  Divide_out1_dlyBalance[11]_i_63/O
+                         net (fo=2, unplaced)         0.281     5.933    Divide_out1_dlyBalance[11]_i_63_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043     5.976 r  Divide_out1_dlyBalance[11]_i_67/O
+                         net (fo=1, unplaced)         0.000     5.976    Divide_out1_dlyBalance[11]_i_67_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.243 r  Divide_out1_dlyBalance_reg[11]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     6.243    Divide_out1_dlyBalance_reg[11]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119     6.362 f  Divide_out1_dlyBalance_reg[15]_i_52/O[2]
+                         net (fo=23, unplaced)        0.333     6.695    Sum_of_Elements_out1[18]
+                         LUT1 (Prop_lut1_I0_O)        0.127     6.822 r  Divide_out1_dlyBalance[19]_i_70/O
+                         net (fo=1, unplaced)         0.000     6.822    Divide_out1_dlyBalance[19]_i_70_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     7.089 r  Divide_out1_dlyBalance_reg[19]_i_53/CO[3]
+                         net (fo=1, unplaced)         0.000     7.089    Divide_out1_dlyBalance_reg[19]_i_53_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     7.142 r  Divide_out1_dlyBalance_reg[23]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     7.142    Divide_out1_dlyBalance_reg[23]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     7.195 r  Divide_out1_dlyBalance_reg[27]_i_52/CO[3]
+                         net (fo=1, unplaced)         0.000     7.195    Divide_out1_dlyBalance_reg[27]_i_52_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173     7.368 r  Divide_out1_dlyBalance_reg[37]_i_90/O[1]
+                         net (fo=21, unplaced)        0.412     7.780    Divide_out16[30]
+                         LUT3 (Prop_lut3_I0_O)        0.134     7.914 r  Divide_out1_dlyBalance[27]_i_55/O
+                         net (fo=26, unplaced)        0.598     8.512    Divide_out1_dlyBalance[27]_i_55_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043     8.555 r  Divide_out1_dlyBalance[3]_i_235/O
+                         net (fo=1, unplaced)         0.000     8.555    Divide_out1_dlyBalance[3]_i_235_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     8.822 r  Divide_out1_dlyBalance_reg[3]_i_136/CO[3]
+                         net (fo=1, unplaced)         0.000     8.822    Divide_out1_dlyBalance_reg[3]_i_136_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.875 r  Divide_out1_dlyBalance_reg[7]_i_61/CO[3]
+                         net (fo=1, unplaced)         0.000     8.875    Divide_out1_dlyBalance_reg[7]_i_61_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.928 r  Divide_out1_dlyBalance_reg[11]_i_60/CO[3]
+                         net (fo=1, unplaced)         0.000     8.928    Divide_out1_dlyBalance_reg[11]_i_60_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.981 r  Divide_out1_dlyBalance_reg[15]_i_60/CO[3]
+                         net (fo=1, unplaced)         0.000     8.981    Divide_out1_dlyBalance_reg[15]_i_60_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     9.034 f  Divide_out1_dlyBalance_reg[37]_i_77/CO[3]
+                         net (fo=42, unplaced)        0.490     9.524    Divide_out1_dlyBalance_reg[37]_i_77_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.048     9.572 r  Divide_out1_dlyBalance[19]_i_44/O
+                         net (fo=2, unplaced)         0.304     9.876    Divide_out1_dlyBalance[19]_i_44_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132    10.008 r  Divide_out1_dlyBalance[19]_i_48/O
+                         net (fo=1, unplaced)         0.000    10.008    Divide_out1_dlyBalance[19]_i_48_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193    10.201 r  Divide_out1_dlyBalance_reg[19]_i_19/CO[3]
+                         net (fo=1, unplaced)         0.000    10.201    Divide_out1_dlyBalance_reg[19]_i_19_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    10.254 r  Divide_out1_dlyBalance_reg[23]_i_19/CO[3]
+                         net (fo=1, unplaced)         0.000    10.254    Divide_out1_dlyBalance_reg[23]_i_19_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173    10.427 r  Divide_out1_dlyBalance_reg[27]_i_19/O[1]
+                         net (fo=3, unplaced)         0.369    10.796    Divide_out1_dlyBalance_reg[27]_i_19_n_6
+                         LUT3 (Prop_lut3_I1_O)        0.125    10.921 r  Divide_out1_dlyBalance[23]_i_17/O
+                         net (fo=2, unplaced)         0.281    11.202    Divide_out1_dlyBalance[23]_i_17_n_0
+                         LUT5 (Prop_lut5_I1_O)        0.043    11.245 r  Divide_out1_dlyBalance[23]_i_6/O
+                         net (fo=2, unplaced)         0.281    11.526    Divide_out1_dlyBalance[23]_i_6_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043    11.569 r  Divide_out1_dlyBalance[23]_i_10/O
+                         net (fo=1, unplaced)         0.000    11.569    Divide_out1_dlyBalance[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.836 r  Divide_out1_dlyBalance_reg[23]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    11.836    Divide_out1_dlyBalance_reg[23]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.119    11.955 r  Divide_out1_dlyBalance_reg[27]_i_2/O[2]
+                         net (fo=12, unplaced)        0.455    12.410    Divide_out1_dlyBalance_reg[27]_i_2_n_5
+                         LUT3 (Prop_lut3_I1_O)        0.127    12.537 r  Divide_out1_dlyBalance[37]_i_98/O
+                         net (fo=1, unplaced)         0.281    12.818    Divide_out1_dlyBalance[37]_i_98_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.250    13.068 r  Divide_out1_dlyBalance_reg[37]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000    13.068    Divide_out1_dlyBalance_reg[37]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173    13.241 r  Divide_out1_dlyBalance_reg[37]_i_24/O[1]
+                         net (fo=3, unplaced)         0.207    13.448    Divide_out1_dlyBalance_reg[37]_i_24_n_6
+                         LUT4 (Prop_lut4_I0_O)        0.125    13.573 r  Divide_out1_dlyBalance[37]_i_54/O
+                         net (fo=1, unplaced)         0.281    13.854    Divide_out1_dlyBalance[37]_i_54_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.250    14.104 r  Divide_out1_dlyBalance_reg[37]_i_16/CO[3]
+                         net (fo=1, unplaced)         0.000    14.104    Divide_out1_dlyBalance_reg[37]_i_16_n_0
+                         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.089    14.193 r  Divide_out1_dlyBalance_reg[37]_i_8/CO[1]
+                         net (fo=39, unplaced)        0.265    14.458    Divide_out1_dlyBalance_reg[37]_i_8_n_2
+                         LUT6 (Prop_lut6_I4_O)        0.124    14.582 r  Divide_out1_dlyBalance[4]_i_7/O
+                         net (fo=1, unplaced)         0.359    14.941    Divide_out1_dlyBalance[4]_i_7_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.299    15.240 r  Divide_out1_dlyBalance_reg[4]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.007    15.247    Divide_out1_dlyBalance_reg[4]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.300 r  Divide_out1_dlyBalance_reg[8]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.300    Divide_out1_dlyBalance_reg[8]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.353 r  Divide_out1_dlyBalance_reg[12]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.353    Divide_out1_dlyBalance_reg[12]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.406 r  Divide_out1_dlyBalance_reg[16]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.406    Divide_out1_dlyBalance_reg[16]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.459 r  Divide_out1_dlyBalance_reg[20]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.459    Divide_out1_dlyBalance_reg[20]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.512 r  Divide_out1_dlyBalance_reg[24]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.512    Divide_out1_dlyBalance_reg[24]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.565 r  Divide_out1_dlyBalance_reg[28]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.565    Divide_out1_dlyBalance_reg[28]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.618 r  Divide_out1_dlyBalance_reg[32]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    15.618    Divide_out1_dlyBalance_reg[32]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.155    15.773 r  Divide_out1_dlyBalance_reg[36]_i_2/O[3]
+                         net (fo=1, unplaced)         0.278    16.051    Divide_out14[36]
+                         LUT6 (Prop_lut6_I0_O)        0.120    16.171 r  Divide_out1_dlyBalance[36]_i_1/O
+                         net (fo=1, unplaced)         0.000    16.171    p_1_in__0[36]
+                         FDRE                                         r  Divide_out1_dlyBalance_reg[36]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)     38.462    38.462 r  
+                                                      0.000    38.462 r  clk (IN)
+                         net (fo=403, unset)          0.510    38.972    clk
+                         FDRE                                         r  Divide_out1_dlyBalance_reg[36]/C
+                         clock pessimism              0.000    38.972    
+                         clock uncertainty           -0.035    38.937    
+                         FDRE (Setup_fdre_C_D)        0.057    38.994    Divide_out1_dlyBalance_reg[36]
+  -------------------------------------------------------------------
+                         required time                         38.994    
+                         arrival time                         -16.171    
+  -------------------------------------------------------------------
+                         slack                                 22.822    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.136ns  (arrival time - required time)
+  Source:                 Discrete_Time_Integrator_x_reg_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            Discrete_Time_Integrator_x_reg_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.239ns  (logic 0.176ns (73.646%)  route 0.063ns (26.354%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.266ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.266     0.266    clk
+                         FDRE                                         r  Discrete_Time_Integrator_x_reg_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 r  Discrete_Time_Integrator_x_reg_reg[12]/Q
+                         net (fo=3, unplaced)         0.063     0.443    Discrete_Time_Integrator_x_reg_reg_n_0_[12]
+                         CARRY4 (Prop_carry4_DI[0]_O[1])
+                                                      0.062     0.505 r  Discrete_Time_Integrator_x_reg_reg[15]_i_1/O[1]
+                         net (fo=3, unplaced)         0.000     0.505    Discrete_Time_Integrator_u_add[13]
+                         FDRE                                         r  Discrete_Time_Integrator_x_reg_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.280     0.280    clk
+                         FDRE                                         r  Discrete_Time_Integrator_x_reg_reg[13]/C
+                         clock pessimism              0.000     0.280    
+                         FDRE (Hold_fdre_C_D)         0.089     0.369    Discrete_Time_Integrator_x_reg_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -0.369    
+                         arrival time                           0.505    
+  -------------------------------------------------------------------
+                         slack                                  0.136    
+
+Slack (MET) :             0.136ns  (arrival time - required time)
+  Source:                 Discrete_Time_Integrator_x_reg_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            Discrete_Time_Integrator_x_reg_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.239ns  (logic 0.176ns (73.646%)  route 0.063ns (26.354%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.266ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.266     0.266    clk
+                         FDRE                                         r  Discrete_Time_Integrator_x_reg_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 f  Discrete_Time_Integrator_x_reg_reg[12]/Q
+                         net (fo=3, unplaced)         0.063     0.443    Discrete_Time_Integrator_x_reg_reg_n_0_[12]
+                         CARRY4 (Prop_carry4_DI[0]_O[1])
+                                                      0.062     0.505 r  Discrete_Time_Integrator_x_reg_reg[15]_i_1/O[1]
+                         net (fo=3, unplaced)         0.000     0.505    Discrete_Time_Integrator_u_add[13]
+                         FDRE                                         r  Discrete_Time_Integrator_x_reg_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.280     0.280    clk
+                         FDRE                                         r  Discrete_Time_Integrator_x_reg_reg[13]/C
+                         clock pessimism              0.000     0.280    
+                         FDRE (Hold_fdre_C_D)         0.089     0.369    Discrete_Time_Integrator_x_reg_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -0.369    
+                         arrival time                           0.505    
+  -------------------------------------------------------------------
+                         slack                                  0.136    
+
+Slack (MET) :             0.136ns  (arrival time - required time)
+  Source:                 Discrete_Time_Integrator_x_reg_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            Discrete_Time_Integrator_x_reg_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.239ns  (logic 0.176ns (73.646%)  route 0.063ns (26.354%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.266ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.266     0.266    clk
+                         FDRE                                         r  Discrete_Time_Integrator_x_reg_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 r  Discrete_Time_Integrator_x_reg_reg[12]/Q
+                         net (fo=3, unplaced)         0.063     0.443    Discrete_Time_Integrator_x_reg_reg_n_0_[12]
+                         CARRY4 (Prop_carry4_DI[0]_O[1])
+                                                      0.062     0.505 f  Discrete_Time_Integrator_x_reg_reg[15]_i_1/O[1]
+                         net (fo=3, unplaced)         0.000     0.505    Discrete_Time_Integrator_u_add[13]
+                         FDRE                                         f  Discrete_Time_Integrator_x_reg_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.280     0.280    clk
+                         FDRE                                         r  Discrete_Time_Integrator_x_reg_reg[13]/C
+                         clock pessimism              0.000     0.280    
+                         FDRE (Hold_fdre_C_D)         0.089     0.369    Discrete_Time_Integrator_x_reg_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -0.369    
+                         arrival time                           0.505    
+  -------------------------------------------------------------------
+                         slack                                  0.136    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         MWCLK
+Waveform(ns):       { 0.000 19.231 }
+Period(ns):         38.462
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         38.462      35.690               Product_out1_1_reg[15]/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         38.462      35.690               Product_out1_1_reg[21]/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         38.462      35.690               Product_out1_1_reg[28]/CLK
+Low Pulse Width   Slow    FDRE/C       n/a            0.350         19.231      18.881               Counter_Limited_out1_reg[0]/C
+Low Pulse Width   Fast    FDRE/C       n/a            0.350         19.231      18.881               Counter_Limited_out1_reg[0]/C
+Low Pulse Width   Slow    FDRE/C       n/a            0.350         19.231      18.881               Counter_Limited_out1_reg[10]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.350         19.231      18.881               Counter_Limited_out1_reg[0]/C
+High Pulse Width  Fast    FDRE/C       n/a            0.350         19.231      18.881               Counter_Limited_out1_reg[0]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.350         19.231      18.881               Counter_Limited_out1_reg[10]/C
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.117ns  (logic 0.043ns (3.850%)  route 1.074ns (96.150%))
+  Logic Levels:           1  (LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=392, unset)          0.537     0.537    u_HDL_DUT_tc/clk_enable
+                         LUT2 (Prop_lut2_I1_O)        0.043     0.580 r  u_HDL_DUT_tc/ce_out_INST_0/O
+                         net (fo=0)                   0.537     1.117    ce_out
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.117ns  (logic 0.043ns (3.850%)  route 1.074ns (96.150%))
+  Logic Levels:           1  (LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=392, unset)          0.537     0.537    u_HDL_DUT_tc/clk_enable
+                         LUT2 (Prop_lut2_I1_O)        0.043     0.580 f  u_HDL_DUT_tc/ce_out_INST_0/O
+                         net (fo=0)                   0.537     1.117    ce_out
+                                                                      f  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Fast Process Corner
+  Data Path Delay:        0.596ns  (logic 0.035ns (5.876%)  route 0.561ns (94.124%))
+  Logic Levels:           1  (LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=392, unset)          0.280     0.280    u_HDL_DUT_tc/clk_enable
+                         LUT2 (Prop_lut2_I1_O)        0.035     0.315 r  u_HDL_DUT_tc/ce_out_INST_0/O
+                         net (fo=0)                   0.280     0.596    ce_out
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.561ns  (logic 0.028ns (4.995%)  route 0.533ns (95.005%))
+  Logic Levels:           1  (LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=392, unset)          0.266     0.266    u_HDL_DUT_tc/clk_enable
+                         LUT2 (Prop_lut2_I1_O)        0.028     0.294 r  u_HDL_DUT_tc/ce_out_INST_0/O
+                         net (fo=0)                   0.266     0.561    ce_out
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.561ns  (logic 0.028ns (4.995%)  route 0.533ns (95.005%))
+  Logic Levels:           1  (LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=392, unset)          0.266     0.266    u_HDL_DUT_tc/clk_enable
+                         LUT2 (Prop_lut2_I1_O)        0.028     0.294 f  u_HDL_DUT_tc/ce_out_INST_0/O
+                         net (fo=0)                   0.266     0.561    ce_out
+                                                                      f  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        1.056ns  (logic 0.036ns (3.408%)  route 1.020ns (96.592%))
+  Logic Levels:           1  (LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=392, unset)          0.510     0.510    u_HDL_DUT_tc/clk_enable
+                         LUT2 (Prop_lut2_I1_O)        0.036     0.546 r  u_HDL_DUT_tc/ce_out_INST_0/O
+                         net (fo=0)                   0.510     1.056    ce_out
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  MWCLK
+  To Clock:  
+
+Max Delay            45 Endpoints
+Min Delay            45 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 u_HDL_DUT_tc/phase_1_reg/C
+                            (rising edge-triggered cell FDSE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.176ns  (logic 0.372ns (31.633%)  route 0.804ns (68.367%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.537     0.537    u_HDL_DUT_tc/clk
+                         FDSE                                         r  u_HDL_DUT_tc/phase_1_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.249     0.786 r  u_HDL_DUT_tc/phase_1_reg/Q
+                         net (fo=1, unplaced)         0.267     1.053    u_HDL_DUT_tc/phase_1
+                         LUT2 (Prop_lut2_I0_O)        0.123     1.176 r  u_HDL_DUT_tc/ce_out_INST_0/O
+                         net (fo=0)                   0.537     1.713    ce_out
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_HDL_DUT_tc/phase_1_reg/C
+                            (rising edge-triggered cell FDSE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.176ns  (logic 0.372ns (31.633%)  route 0.804ns (68.367%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.537     0.537    u_HDL_DUT_tc/clk
+                         FDSE                                         r  u_HDL_DUT_tc/phase_1_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.249     0.786 f  u_HDL_DUT_tc/phase_1_reg/Q
+                         net (fo=1, unplaced)         0.267     1.053    u_HDL_DUT_tc/phase_1
+                         LUT2 (Prop_lut2_I0_O)        0.123     1.176 f  u_HDL_DUT_tc/ce_out_INST_0/O
+                         net (fo=0)                   0.537     1.713    ce_out
+                                                                      f  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_out_tmp_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            data_out[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.786ns  (logic 0.249ns (31.679%)  route 0.537ns (68.321%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.537     0.537    clk
+                         FDRE                                         r  data_out_tmp_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.249     0.786 r  data_out_tmp_reg[0]/Q
+                         net (fo=0)                   0.537     1.323    data_out[0]
+                                                                      r  data_out[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 data_out_tmp_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            data_out[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.380ns  (logic 0.114ns (29.976%)  route 0.266ns (70.024%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.266     0.266    clk
+                         FDRE                                         r  data_out_tmp_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 r  data_out_tmp_reg[0]/Q
+                         net (fo=0)                   0.266     0.647    data_out[0]
+                                                                      r  data_out[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_out_tmp_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            data_out[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.380ns  (logic 0.114ns (29.976%)  route 0.266ns (70.024%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.266     0.266    clk
+                         FDRE                                         r  data_out_tmp_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 f  data_out_tmp_reg[0]/Q
+                         net (fo=0)                   0.266     0.647    data_out[0]
+                                                                      f  data_out[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_out_tmp_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Destination:            data_out[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.380ns  (logic 0.114ns (29.976%)  route 0.266ns (70.024%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.266     0.266    clk
+                         FDRE                                         r  data_out_tmp_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 r  data_out_tmp_reg[10]/Q
+                         net (fo=0)                   0.266     0.647    data_out[10]
+                                                                      r  data_out[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  MWCLK
+
+Max Delay          4810 Endpoints
+Min Delay          4810 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            u_HDL_DUT_tc/count2600_reg[10]/R
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.324ns  (logic 0.086ns (6.495%)  route 1.238ns (93.505%))
+  Logic Levels:           2  (LUT2=1 LUT6=1)
+  Clock Path Skew:        0.510ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=392, unset)          0.537     0.537    u_HDL_DUT_tc/clk_enable
+                         LUT6 (Prop_lut6_I5_O)        0.043     0.580 r  u_HDL_DUT_tc/count2600[11]_i_3/O
+                         net (fo=2, unplaced)         0.281     0.861    u_HDL_DUT_tc/count2600[11]_i_3_n_0
+                         LUT2 (Prop_lut2_I0_O)        0.043     0.904 r  u_HDL_DUT_tc/count2600[11]_i_1/O
+                         net (fo=11, unplaced)        0.420     1.324    u_HDL_DUT_tc/count2600[1]
+                         FDRE                                         r  u_HDL_DUT_tc/count2600_reg[10]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.510     0.510    u_HDL_DUT_tc/clk
+                         FDRE                                         r  u_HDL_DUT_tc/count2600_reg[10]/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            u_HDL_DUT_tc/count2600_reg[10]/R
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.324ns  (logic 0.086ns (6.495%)  route 1.238ns (93.505%))
+  Logic Levels:           2  (LUT2=1 LUT6=1)
+  Clock Path Skew:        0.510ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=392, unset)          0.537     0.537    u_HDL_DUT_tc/clk_enable
+                         LUT6 (Prop_lut6_I5_O)        0.043     0.580 r  u_HDL_DUT_tc/count2600[11]_i_3/O
+                         net (fo=2, unplaced)         0.281     0.861    u_HDL_DUT_tc/count2600[11]_i_3_n_0
+                         LUT2 (Prop_lut2_I0_O)        0.043     0.904 r  u_HDL_DUT_tc/count2600[11]_i_1/O
+                         net (fo=11, unplaced)        0.420     1.324    u_HDL_DUT_tc/count2600[1]
+                         FDRE                                         r  u_HDL_DUT_tc/count2600_reg[10]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.510     0.510    u_HDL_DUT_tc/clk
+                         FDRE                                         r  u_HDL_DUT_tc/count2600_reg[10]/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            u_HDL_DUT_tc/count2600_reg[10]/R
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.324ns  (logic 0.086ns (6.495%)  route 1.238ns (93.505%))
+  Logic Levels:           2  (LUT2=1 LUT6=1)
+  Clock Path Skew:        0.510ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=392, unset)          0.537     0.537    u_HDL_DUT_tc/clk_enable
+                         LUT6 (Prop_lut6_I5_O)        0.043     0.580 f  u_HDL_DUT_tc/count2600[11]_i_3/O
+                         net (fo=2, unplaced)         0.281     0.861    u_HDL_DUT_tc/count2600[11]_i_3_n_0
+                         LUT2 (Prop_lut2_I0_O)        0.043     0.904 f  u_HDL_DUT_tc/count2600[11]_i_1/O
+                         net (fo=11, unplaced)        0.420     1.324    u_HDL_DUT_tc/count2600[1]
+                         FDRE                                         f  u_HDL_DUT_tc/count2600_reg[10]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.510     0.510    u_HDL_DUT_tc/clk
+                         FDRE                                         r  u_HDL_DUT_tc/count2600_reg[10]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Counter_Limited_out1_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.266ns  (logic 0.000ns (0.000%)  route 0.266ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.280ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=392, unset)          0.266     0.266    clk_enable
+                         FDRE                                         r  Counter_Limited_out1_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.280     0.280    clk
+                         FDRE                                         r  Counter_Limited_out1_reg[0]/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Counter_Limited_out1_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.266ns  (logic 0.000ns (0.000%)  route 0.266ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.280ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=392, unset)          0.266     0.266    clk_enable
+                         FDRE                                         r  Counter_Limited_out1_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.280     0.280    clk
+                         FDRE                                         r  Counter_Limited_out1_reg[0]/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Counter_Limited_out1_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@19.231ns period=38.462ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.266ns  (logic 0.000ns (0.000%)  route 0.266ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.280ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=392, unset)          0.266     0.266    clk_enable
+                         FDRE                                         f  Counter_Limited_out1_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=403, unset)          0.280     0.280    clk
+                         FDRE                                         r  Counter_Limited_out1_reg[0]/C
+
+
+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Dec 29 14:10:54 2019
+# Process ID: 9824
+# Current directory: E:/MATLAB/Clean_HDL/hdl_prj/vivado_prj/HDL_DUT_vivado.runs/synth_1
+# Command line: vivado.exe -log HDL_DUT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDL_DUT.tcl
+# Log file: E:/MATLAB/Clean_HDL/hdl_prj/vivado_prj/HDL_DUT_vivado.runs/synth_1/HDL_DUT.vds
+# Journal file: E:/MATLAB/Clean_HDL/hdl_prj/vivado_prj/HDL_DUT_vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDL_DUT.tcl -notrace
