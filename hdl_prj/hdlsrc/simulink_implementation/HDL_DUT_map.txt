@@ -1,3 +1,0 @@
- --> HDL_DUT_pkg
-HDL_DUT_tc --> HDL_DUT_tc
-simulink_implementation/HDL_DUT --> HDL_DUT
